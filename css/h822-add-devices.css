@@ -1,0 +1,51 @@
+.ul-group-check {
+  position: relative;
+  width: 325px;
+  margin: 0 auto; }
+  .ul-group-check .title-group-check {
+    margin-bottom: 5px; }
+    .ul-group-check .title-group-check span {
+      font-size: 15px;
+      font-weight: bold; }
+    .ul-group-check .title-group-check .lable-check {
+      width: auto; }
+  .ul-group-check .div-group-check {
+    width: 24px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    padding: 2px 4px; }
+  .ul-group-check i {
+    font-size: 20px;
+    color: #0097ee; }
+  .ul-group-check .fa-check-circle {
+    display: none; }
+  .ul-group-check .fa-circle-thin {
+    display: block; }
+  .ul-group-check input[type=checkbox] {
+    display: none; }
+    .ul-group-check input[type=checkbox]:checked + label .fa-circle-thin {
+      display: none; }
+    .ul-group-check input[type=checkbox]:checked + label .fa-check-circle {
+      display: block; }
+  .ul-group-check .li-device-check {
+    display: none;
+    margin: 5px 0; }
+    .ul-group-check .li-device-check label {
+      width: 100%; }
+      .ul-group-check .li-device-check label .div-img {
+        width: 40px;
+        float: left;
+        margin-right: 5px; }
+      .ul-group-check .li-device-check label .div-text {
+        float: left;
+        width: auto;
+        margin: 10px; }
+      .ul-group-check .li-device-check label i {
+        float: right;
+        width: auto;
+        margin-top: 10px; }
+  .ul-group-check .div-line {
+    margin: 5px 0 15px; }
+
+/*# sourceMappingURL=h822-add-devices.css.map */

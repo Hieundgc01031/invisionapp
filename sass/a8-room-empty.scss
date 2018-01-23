@@ -1,0 +1,209 @@
+.a8-room-empty{
+  width : 100%;
+  min-width : 375px;
+  height : 100%;
+  min-height : 667px;
+  position : relative;
+  overflow : hidden;
+  margin : 0;
+  .a8-room-content{
+    width: 375px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    .menu-top{
+      position: absolute;
+      height: 26px;
+      width: 325px;
+      top: 50px;
+      left: 25px;
+      margin: 0;
+      .view-name{
+        width: auto;
+        position: absolute;
+        height: auto;
+        top: 0;
+        left: 0;
+        margin: 0;
+        font-size: 22px;
+      }
+      .right-icon{
+        position: absolute;
+        top: 2px;
+        left: 301px;
+        margin: 0;
+        a{
+          width: 24px;
+          height: 24px;
+
+        }
+        img{
+          height: 20px;
+          width: 20px;
+          margin: 0;
+        }
+      }
+    }
+
+    .wrap-content{
+      .icon-empty-room{
+        position: absolute;
+        height: 115px;
+        width: 128px;
+        top: 230px;
+        left: 124px;
+        margin: 0;
+        .group-room{
+          position: absolute;
+          height: 115px;
+          width: 105px;
+          top: 0px;
+          left: 17px;
+          margin: 0;
+          .rectangle5{
+            background: rgba(238, 238, 243, 1.0);
+            position: absolute;
+            height: 91px;
+            width: 28px;
+            top: 13px;
+            left: 66px;
+            margin: 0;
+          }
+          .view4{
+            position: absolute;
+            height: 93px;
+            width: 34px;
+            top: 12px;
+            left: 61px;
+            margin: 0;
+            border-radius: 1px;
+            border-style: solid;
+            border-width: 2;
+            border-color: rgba(145, 160, 174, 1.0);
+          }
+          .view5{
+            background: rgba(145, 160, 174, 1.0);
+            position: absolute;
+            height: 2px;
+            width: 90px;
+            top: 103px;
+            left: 15px;
+            margin: 0;
+            border-radius: 1px;
+          }
+          .image3{
+            position: absolute;
+            height: 115px;
+            width: 67px;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+          }
+          .image4{
+            position: absolute;
+            height: 16px;
+            width: 7px;
+            top: 51px;
+            left: 53px;
+            margin: 0;
+          }
+        }
+        .rectangle3{
+          background: rgba(255, 255, 255, 0.0);
+          position: absolute;
+          height: 113px;
+          width: 14px;
+          top: 1px;
+          left: 82px;
+          margin: 0;
+          opacity: 0.25;
+        }
+        .rectangle4{
+          background: rgba(145, 160, 174, 1.0);
+          position: absolute;
+          height: 2px;
+          width: 4px;
+          top: 103px;
+          left: 124px;
+          margin: 0;
+          border-radius: 1px;
+        }
+        .rectangle2{
+          background: rgba(145, 160, 174, 1.0);
+          position: absolute;
+          height: 2px;
+          width: 14px;
+          top: 103px;
+          left: 0px;
+          margin: 0;
+          border-radius: 1px;
+        }
+      }
+    }
+    .no-room{
+      position: absolute;
+      height: auto;
+      width: auto;
+      top: 380px;
+      left: 105px;
+      margin: 0;
+      font-family: "San Francisco", Helvetica, Arial, serif;
+      font-size: 20.0px;
+      color: rgba(0, 0, 0, 1.0);
+      text-align: center;
+      letter-spacing: 0.47px;
+      line-height: 24.0px;
+    }
+    .add-room{
+      position: absolute;
+      height: 18px;
+      width: 193px;
+      top: 419px;
+      left: 94px;
+      margin: 0;
+      .add-room-img{
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        top: 3px;
+        left: 45px;
+        margin: 0;
+        img{
+          position: relative;
+          height: 12px;
+          width: 12px;
+          top: 0px;
+          left: 0px;
+          margin: 0;
+        }
+      }
+      .add-room-nh{
+        position: absolute;
+        height: auto;
+        width: auto;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+        font-size: 15.0px;
+        color: rgba(139, 139, 139, 1.0);
+        text-align: left;
+        line-height: 17.0px;
+      }
+      .add-room-tao{
+        position: absolute;
+        height: auto;
+        width: auto;
+        top: 0px;
+        left: 64px;
+        margin: 0;
+        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+        font-size: 15.0px;
+        color: rgba(139, 139, 139, 1.0);
+        text-align: left;
+        line-height: 17.0px;
+      }
+    }
+
+
+  }
+}

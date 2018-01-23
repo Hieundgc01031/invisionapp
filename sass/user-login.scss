@@ -1,0 +1,62 @@
+
+.scr-user-login{
+  @include widthcenter;
+  padding: 15px;
+  .title-user-login{
+    margin-bottom: 20px;
+    .house-name{
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .div-topbar-house{
+      width: 24px;
+    }
+  }
+  .info-user-login{
+    .div-img-user{
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .div-text-info{
+      max-width: 50%;
+      line-height: 1.5;
+      p{
+        color: $grey;
+        &.user-name{
+          font-size: 15px;
+          font-weight: bold;
+          color: #000;
+        }
+      }
+    }
+    i{
+      padding-top: 7px;
+      width: 20px;
+      font-size: 22px;
+      color: $grey;
+    }
+  }
+  .input-user-login{
+    font-size: 16px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+  }
+  .div-line{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .btn-user-login{
+    background-color: $blue;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .forget-pass{
+    color: $blue;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+}

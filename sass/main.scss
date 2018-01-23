@@ -1,0 +1,157 @@
+@import "mixins";
+*{
+  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  width : 100%;
+  height : auto;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.tabbar {
+  background-color: white;
+  position: fixed;
+  margin: 0 auto;
+  height: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 35px 10px 35px;
+  z-index: 1000;
+}
+.tabbar .more {
+  background          : rgba(255, 255, 255, 0.0);
+  left                : 281px;
+  position            : absolute;
+  margin              : 0;
+  height              : 50px;
+  width               : 94px;
+  top                 : 0px;
+}
+.tabbar .notification {
+  background          : rgba(255, 255, 255, 0.0);
+  left                : 188px;
+  position            : absolute;
+  margin              : 0;
+  height              : 50px;
+  width               : 94px;
+  top                 : 0px;
+}
+.tabbar .room {
+  background          : rgba(255, 255, 255, 0.0);
+  left                : 94px;
+  position            : absolute;
+  margin              : 0;
+  height              : 50px;
+  width               : 94px;
+  top                 : 0px;
+}
+
+.tabbar .home {
+  background          : rgba(255, 255, 255, 0.0);
+  left                : 0px;
+  position            : absolute;
+  margin              : 0;
+  height              : 50px;
+  width               : 94px;
+  top                 : 0px;
+}
+.tabbar .home .icons-tab-bar-home-normal {
+  background          : rgba(255, 255, 255, 0.0);
+  left                : 35px;
+  position            : relative;
+  margin              : 0;
+  height              : 24px;
+  width               : 24px;
+  top                 : 13px;
+}
+.tabbar .line {
+  background          : rgba(255, 255, 255, 0.0);
+  left                : 0px;
+  position            : absolute;
+  margin              : 0;
+  height              : 1px;
+  width               : 375px;
+  top                 : 0px;
+  opacity             : 0.0;
+}
+.tabbar{
+  .center-vertical-2 {
+    display: flex;               /* establish flex container */
+    align-items: center;         /* vertically center flex items */
+    clear: left;
+    justify-content: space-between;
+    img{
+      max-height: 50px;
+
+    }
+  }
+}
+
+.menu-top{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding-top: 20px;
+  .top-center-vertical {
+    position: relative;
+    width: 325px;
+    margin: 0 auto;
+    .view-name {
+      span{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      i{
+        width: auto;
+        margin: 0 15px 0 0;
+        font-size: 22px;
+        color: #aaaaaa;
+      }
+
+    }
+
+    .right-icon {
+      position: absolute;
+      top: 2px;
+      left: 301px;
+      margin: 0;
+      a{
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top:0;
+        left: 0;
+      }
+      img {
+        position: relative;
+        height: 20px;
+        width: 20px;
+
+      }
+    }
+  }
+}
+
+.the-room{
+  width : 100%;
+  min-width : 375px;
+  height : 100%;
+  min-height : 667px;
+  position : relative;
+  overflow : hidden;
+  margin : 0;
+  .the-room-content{
+    width: 375px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+  }
+}
+
+ul{
+  list-style: none;
+}

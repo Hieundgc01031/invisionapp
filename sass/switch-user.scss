@@ -1,0 +1,57 @@
+@import "mixins";
+@import "variables";
+.switch-user{
+  @include widthcenter;
+  @include backgroundopa(0.4);
+  min-width: 375px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .bgc-some-user{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    left: 0;
+    background-color: #fff;
+    .some-user{
+      margin: auto;
+      width: 375px;
+      padding: 15px;
+      //@include widthcenter;
+      span{
+        width: auto;
+        &.float-left{
+          color: #878787;
+          font-size: 16px;
+        }
+        &.float-right{
+          color: #c0c0c0;
+        }
+      }
+      .list-user{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .div-img-user{
+          width: 50px;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+        .div-text-info{
+          max-width: 50%;
+          line-height: 1.5;
+          p{
+            color: $grey;
+            &.user-name{
+              font-size: 15px;
+              font-weight: bold;
+              color: #000;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

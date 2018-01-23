@@ -1,0 +1,62 @@
+@import "mixins";
+@import "variables";
+.user-details-more{
+  width: 375px;
+  height: 100vh;
+  position: relative;
+  font-size: 16px;
+  color: $grey;
+  padding: 15px 20px;
+  .title-user-more{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    .info-user-text{
+      width: auto;
+      .user-name{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        color: #000;
+      }
+      .user-tittle{
+        font-size: 16px;
+      }
+    }
+    .info-user-img{
+      position: relative;
+      width: 60px;
+      border-radius: 50%;
+      .div-position{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #333;
+        width: 22px;
+        height: 22px;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 15px;
+        padding-top: 2px;
+        padding-left: 4px;
+      }
+    }
+  }
+  .list-setting{
+    margin-top: 15px;
+    span{
+      width: auto;
+      font-size: 16px;
+    }
+    .float-right{
+      width: 24px;
+    }
+    .div-line{
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+  }
+  .div-menu-bottom{
+
+  }
+}

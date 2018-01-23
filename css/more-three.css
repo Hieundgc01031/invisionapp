@@ -1,0 +1,48 @@
+.user-details-more {
+  width: 375px;
+  height: 100vh;
+  position: relative;
+  font-size: 16px;
+  color: #929292;
+  padding: 15px 20px; }
+  .user-details-more .title-user-more {
+    margin-bottom: 30px;
+    margin-top: 15px; }
+    .user-details-more .title-user-more .info-user-text {
+      width: auto; }
+      .user-details-more .title-user-more .info-user-text .user-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        color: #000; }
+      .user-details-more .title-user-more .info-user-text .user-tittle {
+        font-size: 16px; }
+    .user-details-more .title-user-more .info-user-img {
+      position: relative;
+      width: 60px;
+      border-radius: 50%; }
+      .user-details-more .title-user-more .info-user-img .div-position {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #333;
+        width: 22px;
+        height: 22px;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 15px;
+        padding-top: 2px;
+        padding-left: 4px; }
+  .user-details-more .list-setting {
+    margin-top: 15px; }
+    .user-details-more .list-setting span {
+      width: auto;
+      font-size: 16px; }
+    .user-details-more .list-setting .float-right {
+      width: 24px; }
+    .user-details-more .list-setting .div-line {
+      margin-top: 15px;
+      margin-bottom: 25px; }
+
+/*# sourceMappingURL=more-three.css.map */

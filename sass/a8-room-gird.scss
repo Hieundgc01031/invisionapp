@@ -1,0 +1,115 @@
+.a8-room-grid{
+  .wrap-content{
+    margin-top: 60px;
+    padding-bottom: 130px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    .div-number-on-off{
+      width: 325px;
+      margin: 0 auto;
+      .div-number-on{
+        float: left;
+        width: auto;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #ccc;
+      }
+      .div-number-off{
+        float: left;
+        width: auto;
+      }
+      .div-button{
+        width: auto;
+        float: right;
+      }
+      .text-number{
+        color: #c0c0c0;
+        margin-left: 2px;
+      }
+    }
+
+    .div-activity{
+      margin-top: 30px;
+      width: auto;
+      margin-left: 23px;
+      .slick-list{
+        padding-left: 3px;
+      }
+      .the-activity{
+        margin: 3px 15px 3px 3px;
+        @include boxshad;
+        border-radius: 5px;
+        height: 60px;
+        width: 158px;
+        outline: none;
+        position: relative;
+        .icon-the-activity{
+          width: 20px;
+          @include positonabtl(20px, 20px);
+        }
+        .text-the-activity{
+          width: auto;
+          @include positonabtl(22px, 50px);
+          font-weight: bold;
+          font-size: 15px;
+          color: #b7b7b7;
+          &.active{
+            color: #000;
+          }
+        }
+      }
+    }
+    
+    .div-line-activity{
+      margin-left: 25px;
+      background-color: #e4e4e4;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .tittle-lamp{
+      margin-left: 22px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .div-lamp{
+      margin-top: 10px;
+      width: auto;
+      margin-left: 25px;
+      .slick-list{
+        padding-left: 3px;
+      }
+      .the-lamp{
+        width: 102px;
+        margin: 3px 14px 3px 1px;
+        @include boxshad;
+        border-radius: 5px;
+        height: 100px;
+        outline: none;
+        position: relative;
+        .icon-the-lamp{
+          height: 40px;
+          width: 40px;
+          margin-left: 10px;
+          margin-top: 10px;
+          img{
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .text-the-lamp{
+          p{
+            margin: 5px 10px;
+            font-weight: bold;
+          }
+          span{
+            margin: 5px 10px 10px 10px;
+            color: #c2c2c2;
+          }
+        }
+      }
+    }
+
+  }
+}

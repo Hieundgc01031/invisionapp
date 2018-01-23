@@ -1,0 +1,52 @@
+@import "variables";
+.upercase{
+  text-transform: uppercase;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+.clear-both{
+  clear: both;
+}
+.btn{
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+.div-line{
+  height: 1px;
+  background-color: #ccc;
+}
+.text-center{
+  text-align: center;
+}
+.color-grey{
+  color: $grey;
+}
+.font-bold{
+  font-weight: bold;
+}
+.bgc-grey{
+  background-color: $grey;
+}
+.right-icon{
+  height: 24px;
+  width: 24px;
+}
+.menu-bottom{
+  position: absolute;
+  height: 50px;
+  width: 375px;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+.mrgt-10{
+  margin-top: 10px;
+}
+.pdt-10{
+  padding-top: 10px;
+}
