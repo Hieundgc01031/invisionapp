@@ -1,7 +1,6 @@
 .ul-group-check {
   position: relative;
-  width: 325px;
-  margin: 0 auto; }
+  margin: 0 25px; }
   .ul-group-check .title-group-check {
     margin-bottom: 5px; }
     .ul-group-check .title-group-check span {
@@ -46,6 +45,6 @@
         width: auto;
         margin-top: 10px; }
   .ul-group-check .div-line {
-    margin: 5px 0 15px; }
+    margin: 10px 0 20px; }
 
 /*# sourceMappingURL=h822-add-devices.css.map */

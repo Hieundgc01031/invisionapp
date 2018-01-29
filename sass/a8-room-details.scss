@@ -1,7 +1,8 @@
+@import "mixins";
 .a8-room-details{
   .wrap-content{
-    margin-top: 60px;
-    padding-bottom: 130px;
+    margin-top: 100px;
+    padding-bottom: 155px;
     overflow-y: auto;
     overflow-x: hidden;
     height: 100%;
@@ -37,12 +38,12 @@
         padding-left: 3px;
       }
       .the-activity{
-        margin: 3px 15px 3px 3px;
+        margin: 3px 13px 10px 3px;
         float: left;
         @include boxshad;
         border-radius: 5px;
         height: 60px;
-        width: 158px;
+        width: 156px;
         outline: none;
         position: relative;
         .icon-the-activity{
@@ -66,27 +67,27 @@
       margin-left: 25px;
       background-color: #e4e4e4;
       margin-top: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .tittle-lamp{
-      margin-left: 22px;
+      margin-left: 25px;
       font-size: 15px;
       font-weight: bold;
     }
     .div-lamp{
       margin-top: 10px;
       width: auto;
-      margin-left: 25px;
+      margin-left: 23px;
       .slick-list{
-        padding-left: 3px;
+        padding: 3px 0 3px 3px;
       }
       .the-lamp{
-        width: 102px;
+        width: 101px;
         margin: 3px 14px 3px 1px;
         @include boxshad;
         border-radius: 5px;
-        height: 100px;
+        height: 110px;
         outline: none;
         position: relative;
         .icon-the-lamp{
@@ -101,7 +102,7 @@
         }
         .text-the-lamp{
           p{
-            margin: 5px 10px;
+            margin: 10px 10px 5px;
             font-weight: bold;
           }
           span{

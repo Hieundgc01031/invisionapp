@@ -3,17 +3,16 @@
 .a8-room-addnew{
   .wrap-content{
     &.wrap-content-add-room{
-      padding-bottom: 100px;
+      padding-bottom: 140px;
     }
     .tittle-room-add{
-      width: 325px;
-      margin: 0 auto;
+
+      margin: 0 25px;
       color: #c0c0c0;
 
     }
     .div-add-icon{
       margin: 15px 25px;
-      width: 325px;
       .icon-add{
         &.icon-add-device{
           width: 40px;
@@ -45,15 +44,19 @@
         font-weight: bold;
       }
     }
-    .input-add-room-name{
-      width: 325px;
-      margin: 0px 25px 15px;
-      padding: 10px 3px;
-      border: 0;
-      border-bottom: 1px solid $blue;
-      outline: none;
-      font-weight: bold;
-      font-size: 16px;
+    form{
+      width: 100%;
+      padding: 0 25px;
+      .input-add-room-name{
+        width: 100%;
+        margin: 0 0 15px;
+        padding: 10px 3px;
+        border: 0;
+        border-bottom: 1px solid $blue;
+        outline: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
     }
     .div-line-addnew-room{
       margin:  10px 0;
@@ -61,7 +64,6 @@
     }
     .div-info-addroom{
       position: relative;
-      width: 325px;
       padding-top: 10px;
       margin: 0 25px;
       .div-device{
@@ -118,10 +120,9 @@
       .div-line-info-add{
         background-color: #ccc;
         margin: -1px -25px 0;
-        width: 375px;
       }
       .div-line-scences{
-        margin: 5px 0 10px;
+        margin: 5px 0 15px;
       }
       .div-offdevice{
         .title-group{
@@ -279,7 +280,7 @@
   bottom: -100%;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 2001;
   padding-bottom: 10px;
   .text-select-icon-room{
     margin: 0 auto;
@@ -322,7 +323,7 @@
   bottom: -100%;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 2001;
   padding-bottom: 10px;
   .text-select-icon-scences{
     margin: 0 auto;

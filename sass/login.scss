@@ -2,7 +2,11 @@
 @import "mixins";
 @import "class";
 .background-login{
+  min-width: 375px;
   margin-bottom: 30px;
+  img{
+    width: 100%;
+  }
 }
 .scr-login{
   @include widthcenter;
@@ -45,6 +49,7 @@
     color: #fff;
     padding: 12px;
     font-size: 16px;
+    width: 100%;
   }
   .div-line{
     margin-top: 20px;

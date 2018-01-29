@@ -20,10 +20,6 @@ $(document).ready(function () {
        $(this).find('.div-check-add-new-scences').toggleClass('active');
     });
 
-    // $('.btn-nav-open-smart').click(function () {
-    //     $('.home-menu-smart1').animate({left: 0}, 600);
-    //     $('.bgc-opa-smart').css({ 'visibility': 'visible', 'opacity': 1});
-    // });
     $('.close-div-select-room').click(function () {
         $('.div-select-icon-room').animate({bottom: '-100%'}, 400);
         $('.div-opacity-full-room').animate({'opacity': 0}, 400);
@@ -33,7 +29,7 @@ $(document).ready(function () {
     $('.change-new-icon').click(function () {
         $('.div-select-icon-room').animate({bottom: '0'}, 400);
         $('.div-opacity-full-room').animate({'opacity': 0.8}, 400);
-        $('.div-opacity-full-room').css({'z-index': 10});
+        $('.div-opacity-full-room').css({'z-index': 2000});
     });
 
     $('.close-div-select-scences').click(function () {

@@ -1,7 +1,6 @@
 @import "mixins";
 *{
   font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
-  width : 100%;
   height : auto;
   margin: 0 auto;
   padding: 0;
@@ -16,7 +15,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 10px 35px 10px 35px;
   z-index: 1000;
 }
 .tabbar .more {
@@ -87,13 +85,48 @@
     }
   }
 }
+.center-vertical-1 {
+  display: flex;               /* establish flex container */
+  align-items: center;         /* vertically center flex items */
+}
+.bars-top-bars{
+  position: fixed;
+  background: white;
+  top: 0;
+  height: 80px;
+  left: 18px;
+  right: 25px;
+  z-index: 1000;
+  & > div >a{
+    height : 26px;
+  }
+  .icon-top-bar-left{
+    margin-left: 0;
+    width: 24px;
+    height: 24px;
+  }
+  .icon-top-bar-right{
+    margin-right: 0;
+    width: 24px;
+    height: 24px;
+  }
+  .title{
+    background: rgba(255, 255, 255, 0.0);
+    font-family: "San Francisco", Helvetica, Arial, serif;
+    font-size: 22.0px;
+    color: rgba(0, 0, 0, 1.0);
+    margin-left: 0.5em;
+  }
+}
 
 .menu-top{
   position: fixed;
+  background: #fff;
+  z-index: 2000;
   height: 50px;
   width: 100%;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   margin: 0;
   padding-top: 20px;
   .top-center-vertical {
@@ -144,8 +177,18 @@
   position : relative;
   overflow : hidden;
   margin : 0;
+  .bars-top-bars{
+    padding-top: 35px;
+    height: 70px;
+    .icon-top-bar-left{
+      float: left;
+    }
+    .title{
+      float: left;
+      width: auto;
+    }
+  }
   .the-room-content{
-    width: 375px;
     height: 100%;
     position: relative;
     margin: auto;
