@@ -1,0 +1,72 @@
+@import "variables";
+@import "mixins";
+@import "class";
+.background-login{
+  min-width: 375px;
+  margin-bottom: 30px;
+  img{
+    width: 100%;
+  }
+}
+.scr-login{
+  @include widthcenter;
+  padding: 15px;
+
+  .title-login{
+    font-size: 23px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  .group-sigin{
+    position: relative;
+    .p-code{
+      float: left;
+      width: 80%;
+      line-height: 2;
+      color: $grey;
+    }
+    .input-pass{
+      width: 80%;
+      border: 0;
+      outline: none;
+      padding: 2px;
+      display: none;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .img-scan{
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      width: 40px;
+      a img{
+        max-height: 30px;
+        max-width: 30px;
+      }
+    }
+  }
+  .btn-continue{
+    background-color: $blue;
+    padding: 12px;
+    width: 100%;
+    a{
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  .div-line{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    &.active{
+      background-color: $blue;
+    }
+    &.div-line-login{
+      margin-top: 15px;
+    }
+  }
+  .title-comp{
+    font-size: 14px;
+    padding: 20px 0;
+  }
+}

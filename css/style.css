@@ -174,6 +174,47 @@
 ul {
   list-style: none; }
 
+.div-button-toggle {
+  margin-top: -5px; }
+  .div-button-toggle .switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px; }
+    .div-button-toggle .switch input {
+      display: none; }
+    .div-button-toggle .switch .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transition: .4s;
+      transition: .4s;
+      background-color: #ccc;
+      border-radius: 2px; }
+      .div-button-toggle .switch .slider.round {
+        border-radius: 20px; }
+        .div-button-toggle .switch .slider.round:before {
+          border-radius: 50%; }
+    .div-button-toggle .switch .slider:before {
+      position: absolute;
+      content: "";
+      background-color: #fff;
+      height: 20px;
+      width: 20px;
+      left: 2px;
+      top: 2px; }
+    .div-button-toggle .switch input:checked + .slider {
+      background-color: #0097ee; }
+    .div-button-toggle .switch input:checked + .slider:before {
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px); }
+
+a {
+  text-decoration: none; }
+
 .upercase {
   text-transform: uppercase; }
 
@@ -252,76 +293,92 @@ ul {
       outline: none;
       padding: 2px;
       display: none;
-      font-size: 18px; }
+      font-size: 16px;
+      margin-top: 10px; }
     .scr-login .group-sigin .img-scan {
       position: absolute;
       bottom: -5px;
       right: 0;
       width: 40px; }
-      .scr-login .group-sigin .img-scan img {
-        max-height: 40px;
-        max-width: 40px; }
+      .scr-login .group-sigin .img-scan a img {
+        max-height: 30px;
+        max-width: 30px; }
   .scr-login .btn-continue {
     background-color: #0097ee;
-    color: #fff;
     padding: 12px;
-    font-size: 16px;
     width: 100%; }
+    .scr-login .btn-continue a {
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff; }
   .scr-login .div-line {
     margin-top: 20px;
     margin-bottom: 30px; }
     .scr-login .div-line.active {
       background-color: #0097ee; }
+    .scr-login .div-line.div-line-login {
+      margin-top: 15px; }
   .scr-login .title-comp {
     font-size: 14px;
     padding: 20px 0; }
 
-.scr-user-login {
-  width: 375px;
-  margin: auto;
-  padding: 15px; }
-  .scr-user-login .title-user-login {
-    margin-bottom: 20px; }
-    .scr-user-login .title-user-login .house-name {
-      font-size: 20px;
-      font-weight: bold; }
-    .scr-user-login .title-user-login .div-topbar-house {
-      width: 24px; }
-  .scr-user-login .info-user-login .div-img-user {
+.bars-top-bars .house-name {
+  font-size: 20px;
+  font-weight: bold; }
+
+.the-room-content .enter-pass-content {
+  margin: 90px 25px 0; }
+  .the-room-content .enter-pass-content .info-user-login .div-img-user {
     width: 50px;
     border-radius: 50%;
     margin-right: 20px; }
-  .scr-user-login .info-user-login .div-text-info {
+    .the-room-content .enter-pass-content .info-user-login .div-img-user img {
+      width: 50px;
+      border-radius: 50%; }
+  .the-room-content .enter-pass-content .info-user-login .div-text-info {
     max-width: 50%;
-    line-height: 1.5; }
-    .scr-user-login .info-user-login .div-text-info p {
+    line-height: 1.5;
+    margin-top: 2px; }
+    .the-room-content .enter-pass-content .info-user-login .div-text-info p {
       color: #929292; }
-      .scr-user-login .info-user-login .div-text-info p.user-name {
+      .the-room-content .enter-pass-content .info-user-login .div-text-info p.user-name {
         font-size: 15px;
         font-weight: bold;
         color: #000; }
-  .scr-user-login .info-user-login i {
+  .the-room-content .enter-pass-content .info-user-login i {
     padding-top: 7px;
     width: 20px;
     font-size: 22px;
     color: #929292; }
-  .scr-user-login .input-user-login {
+  .the-room-content .enter-pass-content .input-user-login {
     font-size: 16px;
     margin-top: 20px;
     border: 0;
     outline: none; }
-  .scr-user-login .div-line {
+  .the-room-content .enter-pass-content .div-line {
     margin-top: 10px;
     margin-bottom: 30px; }
-  .scr-user-login .btn-user-login {
+  .the-room-content .enter-pass-content .btn-user-login {
     background-color: #0097ee;
     color: #fff;
     padding: 12px;
-    font-size: 16px; }
-  .scr-user-login .forget-pass {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 4px; }
+    .the-room-content .enter-pass-content .btn-user-login a {
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none; }
+  .the-room-content .enter-pass-content .forget-pass {
     color: #0097ee;
-    margin-top: 10px;
+    margin-top: 25px;
     font-weight: bold; }
+    .the-room-content .enter-pass-content .forget-pass a {
+      color: #0097ee;
+      margin-top: 10px;
+      font-weight: bold;
+      text-decoration: none; }
 
 .switch-user {
   width: 375px;
@@ -341,8 +398,7 @@ ul {
     background-color: #fff; }
     .switch-user .bgc-some-user .some-user {
       margin: auto;
-      width: 375px;
-      padding: 15px; }
+      padding: 25px; }
       .switch-user .bgc-some-user .some-user span {
         width: auto; }
         .switch-user .bgc-some-user .some-user span.float-left {
@@ -355,10 +411,15 @@ ul {
         margin-bottom: 15px; }
         .switch-user .bgc-some-user .some-user .list-user .div-img-user {
           width: 50px;
+          height: 50px;
           border-radius: 50%;
           margin-right: 20px; }
+          .switch-user .bgc-some-user .some-user .list-user .div-img-user img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; }
         .switch-user .bgc-some-user .some-user .list-user .div-text-info {
-          max-width: 50%;
+          max-width: 60%;
           line-height: 1.5; }
           .switch-user .bgc-some-user .some-user .list-user .div-text-info p {
             color: #929292; }
@@ -617,14 +678,14 @@ ul {
       left: 170px; }
 
 .a8-room-grid .wrap-content {
-  margin-top: 60px;
-  padding-bottom: 130px;
+  margin-top: 95px;
+  padding-bottom: 160px;
+  padding-top: 5px;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%; }
   .a8-room-grid .wrap-content .div-number-on-off {
-    width: 325px;
-    margin: 0 auto; }
+    margin: 0 25px; }
     .a8-room-grid .wrap-content .div-number-on-off .div-number-on {
       float: left;
       width: auto;
@@ -634,24 +695,24 @@ ul {
     .a8-room-grid .wrap-content .div-number-on-off .div-number-off {
       float: left;
       width: auto; }
-    .a8-room-grid .wrap-content .div-number-on-off .div-button {
+    .a8-room-grid .wrap-content .div-number-on-off .div-button-toggle {
       width: auto;
       float: right; }
     .a8-room-grid .wrap-content .div-number-on-off .text-number {
       color: #c0c0c0;
       margin-left: 2px; }
   .a8-room-grid .wrap-content .div-activity {
-    margin-top: 30px;
+    margin: 25px 20px 0 20px;
     width: auto;
-    margin-left: 23px; }
-    .a8-room-grid .wrap-content .div-activity .slick-list {
-      padding-left: 3px; }
+    overflow: hidden;
+    white-space: nowrap; }
     .a8-room-grid .wrap-content .div-activity .the-activity {
-      margin: 3px 15px 3px 3px;
+      display: inline-block;
+      margin: 5px 15px 3px 3px;
       box-shadow: 0px 2px 10px 2px rgba(224, 224, 224, 0.4);
       border-radius: 5px;
       height: 60px;
-      width: 158px;
+      width: 155px;
       outline: none;
       position: relative; }
       .a8-room-grid .wrap-content .div-activity .the-activity .icon-the-activity {
@@ -661,16 +722,21 @@ ul {
         left: 20px; }
       .a8-room-grid .wrap-content .div-activity .the-activity .text-the-activity {
         width: auto;
+        white-space: normal;
         position: absolute;
         top: 22px;
         left: 50px;
         font-weight: bold;
         font-size: 15px;
-        color: #b7b7b7; }
-        .a8-room-grid .wrap-content .div-activity .the-activity .text-the-activity.active {
-          color: #000; }
+        color: #b7b7b7;
+        max-height: 34px;
+        overflow: hidden;
+        padding-right: 5px; }
+      .a8-room-grid .wrap-content .div-activity .the-activity.active .text-the-activity {
+        color: #000; }
   .a8-room-grid .wrap-content .div-line-activity {
     margin-left: 25px;
+    margin-right: 25px;
     background-color: #e4e4e4;
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -681,12 +747,15 @@ ul {
   .a8-room-grid .wrap-content .div-lamp {
     margin-top: 10px;
     width: auto;
-    margin-left: 23px; }
-    .a8-room-grid .wrap-content .div-lamp .slick-list {
-      padding-left: 3px; }
+    margin-left: 23px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 1px; }
     .a8-room-grid .wrap-content .div-lamp .the-lamp {
+      display: inline-block;
+      background: #fff;
       width: 102px;
-      margin: 3px 14px 3px 1px;
+      margin: 3px 13px 3px 1px;
       box-shadow: 0px 2px 10px 2px rgba(224, 224, 224, 0.4);
       border-radius: 5px;
       height: 100px;
@@ -702,10 +771,27 @@ ul {
           height: 40px; }
       .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp p {
         margin: 5px 10px;
-        font-weight: bold; }
+        font-weight: bold;
+        overflow: hidden; }
       .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span {
         margin: 5px 10px 10px 10px;
         color: #c2c2c2; }
+
+.div-bgc-25 {
+  overflow: hidden;
+  margin: 10px 25px 15px;
+  height: auto;
+  background-color: rgba(250, 250, 250, 0.8);
+  padding: 10px 0 10px 10px;
+  border-radius: 8px; }
+  .div-bgc-25 .div-lamp {
+    margin-left: 0 !important;
+    margin-top: 0 !important; }
+    .div-bgc-25 .div-lamp .the-lamp:last-child {
+      margin-right: 10px !important; }
+  .div-bgc-25 .tittle-lamp {
+    margin-left: 4px !important;
+    margin-bottom: 10px; }
 
 .a8-room-details .wrap-content {
   margin-top: 100px;
@@ -1146,18 +1232,26 @@ ul {
     font-size: 22px;
     font-weight: bold; }
 .wrap-content-home .div-scences-usual {
-  margin: 25px 0 15px 18px;
-  width: auto; }
+  margin: 25px 20px 5px;
+  padding-right: 1px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap; }
   .wrap-content-home .div-scences-usual .div-some-scences {
-    width: 70px;
+    display: inline-block;
+    width: 80px;
     height: auto;
-    margin-right: 10px;
+    padding: 0 5px;
+    margin: 0 -2px;
     outline: none;
     color: #c2c2c2;
     text-align: center; }
     .wrap-content-home .div-scences-usual .div-some-scences p {
       margin-top: 10px;
-      width: auto; }
+      width: auto;
+      height: 32px;
+      overflow: hidden;
+      white-space: initial; }
     .wrap-content-home .div-scences-usual .div-some-scences img {
       width: 50px; }
     .wrap-content-home .div-scences-usual .div-some-scences.active {
@@ -1165,6 +1259,8 @@ ul {
       font-weight: bold; }
 .wrap-content-home .div-line-content-home {
   margin: 20px 25px 30px; }
+  .wrap-content-home .div-line-content-home.mrt-5 {
+    margin-top: 5px; }
 .wrap-content-home .div-just-use {
   margin: 0 10px 0 25px; }
   .wrap-content-home .div-just-use p {
@@ -1194,7 +1290,9 @@ ul {
           height: 40px; }
       .wrap-content-home .div-just-use .div-device .the-device .text-the-device p {
         margin: 5px 10px;
-        font-weight: bold; }
+        font-weight: bold;
+        max-height: 18px;
+        overflow: hidden; }
       .wrap-content-home .div-just-use .div-device .the-device .text-the-device span {
         margin: 5px 10px 10px 10px;
         color: #c2c2c2; }
@@ -1206,9 +1304,13 @@ ul {
     font-weight: bold;
     font-size: 16px; }
   .wrap-content-home .div-camera-user .slide-camera {
+    white-space: nowrap;
+    margin-right: 15px;
     margin-left: 23px;
+    overflow: hidden;
     width: auto; }
     .wrap-content-home .div-camera-user .slide-camera .the-camera {
+      display: inline-block;
       margin: 1px 10px 1px 1px;
       width: 165px;
       height: auto; }
@@ -1441,24 +1543,45 @@ ul {
       height: 30px;
       margin-top: 10px;
       position: relative; }
-      .div-setting-device .main-setting-device .div-mousedown-content .div-mousedown-event .div-line-mousedown {
-        width: 250px;
-        position: absolute;
-        left: 15px;
-        top: 15px; }
-      .div-setting-device .main-setting-device .div-mousedown-content .div-mousedown-event .div-circle-mouserdown {
-        background-color: #fff;
-        width: 30px;
+    .div-setting-device .main-setting-device .div-mousedown-content input[type=range] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 75%;
+      float: left;
+      margin: 20px 0 10px 15px; }
+      .div-setting-device .main-setting-device .div-mousedown-content input[type=range]:focus {
+        outline: none; }
+      .div-setting-device .main-setting-device .div-mousedown-content input[type=range]::-webkit-slider-runnable-track {
+        animate: 0.2s;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc; }
+      .div-setting-device .main-setting-device .div-mousedown-content input[type=range]::-webkit-slider-thumb {
+        border: 1px solid #ccc;
         height: 30px;
+        width: 30px;
         border-radius: 50%;
-        border: 1px solid #bbb;
-        position: absolute;
-        top: 0;
-        left: 80%; }
+        background: #fff;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -15px; }
+      .div-setting-device .main-setting-device .div-mousedown-content input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 1px;
+        background-color: #ccc; }
+      .div-setting-device .main-setting-device .div-mousedown-content input[type=range]::-moz-range-thumb {
+        border: 1px solid #ccc;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -15px; }
     .div-setting-device .main-setting-device .div-mousedown-content .div-percent-mousedown {
       float: right;
       width: auto;
-      margin-top: 15px; }
+      margin-top: 10px; }
     .div-setting-device .main-setting-device .div-control-tivi1 {
       height: 80%;
       position: relative;
@@ -1614,6 +1737,129 @@ ul {
           left: 235px;
           top: 330px;
           color: #5b5b5b; }
+
+.the-room-content .wrap-content .div-content-b6-empty {
+  width: 325px;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  padding-top: 70px; }
+  .the-room-content .wrap-content .div-content-b6-empty .div-img-alert {
+    width: 92px;
+    height: 114px;
+    background-color: red;
+    margin-top: 45%; }
+  .the-room-content .wrap-content .div-content-b6-empty h6 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 35px; }
+  .the-room-content .wrap-content .div-content-b6-empty p {
+    width: auto;
+    color: #8b8b8b;
+    font-size: 15px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 15px; }
+.the-room-content .wrap-content.wrap-content-notifications {
+  overflow: auto;
+  height: 100%;
+  margin-top: 55px; }
+  .the-room-content .wrap-content.wrap-content-notifications .ul-notifications {
+    margin: 30px 25px; }
+    .the-room-content .wrap-content.wrap-content-notifications .ul-notifications .title-ul {
+      font-weight: bold;
+      margin-bottom: 25px; }
+    .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li {
+      margin: 15px 0; }
+      .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li.li-uncheck .div-icon-time-noti .div-icon-noti {
+        background-color: #ff863b; }
+      .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li.li-uncheck .div-content-noti .div-line-vertical {
+        background-color: #ff863b; }
+      .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li.li-uncheck .div-text-noti .div-scences-noti {
+        color: #000; }
+      .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li .div-icon-time-noti .div-icon-noti {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ccc;
+        float: left; }
+        .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li .div-icon-time-noti .div-icon-noti i {
+          font-size: 10px;
+          color: #fff;
+          margin: 4px 0 0 5px; }
+      .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li .div-icon-time-noti .div-time-noti {
+        float: right;
+        font-size: 12px;
+        color: #ccc;
+        font-weight: 300; }
+      .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li .div-content-noti {
+        margin: 5px 9px; }
+        .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li .div-content-noti .div-line-vertical {
+          height: 45px;
+          width: 2px;
+          background-color: #ccc;
+          float: left; }
+        .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li .div-content-noti .div-text-noti {
+          color: #ccc;
+          font-size: 15px;
+          margin: 5px 0 5px 20px;
+          max-width: 80%; }
+          .the-room-content .wrap-content.wrap-content-notifications .ul-notifications li .div-content-noti .div-text-noti .div-scences-noti {
+            margin-bottom: 5px;
+            font-weight: bold; }
+.the-room-content .wrap-content.wrap-content-notification-alert {
+  margin-top: 0px; }
+  .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert1 {
+    padding: 15px 25px;
+    background-color: #ff3a2f;
+    height: 80px;
+    border: 1px solid #ff3a2f; }
+    .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert1 .div-icon-alert1 {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff;
+      float: left; }
+    .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert1 .div-content-alert1 {
+      width: auto;
+      float: left;
+      color: #fff;
+      margin: 0 0 0 20px; }
+      .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert1 .div-content-alert1 .room-name {
+        font-size: 15px;
+        margin: 5px 0; }
+    .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert1 .div-time-alert-1 {
+      float: right;
+      color: #fff;
+      text-align: right;
+      margin: 7px 0 0; }
+      .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert1 .div-time-alert-1 p {
+        font-size: 13px; }
+    .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert1.empty-noti {
+      height: 80px;
+      background: #ff853b;
+      box-shadow: 0px 6px 14px rgba(255, 133, 59, 0.2); }
+  .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert2 {
+    padding: 15px 0;
+    height: 49px;
+    background: #e4291f;
+    box-shadow: 0px 4px 14px rgba(229, 41, 31, 0.2); }
+    .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert2 .div-off-alert {
+      color: #ececec;
+      float: left;
+      width: 50%;
+      text-align: center; }
+    .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert2 .div-see-camera {
+      color: #fff;
+      float: left;
+      width: 50%;
+      text-align: center; }
+      .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert2 .div-see-camera a {
+        color: #fff;
+        padding: 10px; }
 
 * {
   background: rgba(0, 0, 0, 0); }

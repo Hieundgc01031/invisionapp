@@ -1,0 +1,108 @@
+.upercase {
+  text-transform: uppercase; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clear-both {
+  clear: both; }
+
+.btn {
+  border: 0;
+  outline: 0;
+  border-radius: 5px; }
+
+.div-line {
+  height: 1px;
+  background-color: #ccc; }
+
+.text-center {
+  text-align: center; }
+
+.color-grey {
+  color: #929292; }
+
+.font-bold {
+  font-weight: bold; }
+
+.bgc-grey {
+  background-color: #929292; }
+
+.right-icon {
+  height: 24px;
+  width: 24px; }
+
+.menu-bottom {
+  position: absolute;
+  height: 50px;
+  width: 375px;
+  bottom: 0;
+  left: 0;
+  margin: 0; }
+
+.mrgt-10 {
+  margin-top: 10px; }
+
+.pdt-10 {
+  padding-top: 10px; }
+
+.background-login {
+  min-width: 375px;
+  margin-bottom: 30px; }
+  .background-login img {
+    width: 100%; }
+
+.scr-login {
+  width: 375px;
+  margin: auto;
+  padding: 15px; }
+  .scr-login .title-login {
+    font-size: 23px;
+    line-height: 1.7;
+    margin-bottom: 30px; }
+  .scr-login .group-sigin {
+    position: relative; }
+    .scr-login .group-sigin .p-code {
+      float: left;
+      width: 80%;
+      line-height: 2;
+      color: #929292; }
+    .scr-login .group-sigin .input-pass {
+      width: 80%;
+      border: 0;
+      outline: none;
+      padding: 2px;
+      display: none;
+      font-size: 16px;
+      margin-top: 10px; }
+    .scr-login .group-sigin .img-scan {
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      width: 40px; }
+      .scr-login .group-sigin .img-scan a img {
+        max-height: 30px;
+        max-width: 30px; }
+  .scr-login .btn-continue {
+    background-color: #0097ee;
+    padding: 12px;
+    width: 100%; }
+    .scr-login .btn-continue a {
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff; }
+  .scr-login .div-line {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    .scr-login .div-line.active {
+      background-color: #0097ee; }
+    .scr-login .div-line.div-line-login {
+      margin-top: 15px; }
+  .scr-login .title-comp {
+    font-size: 14px;
+    padding: 20px 0; }
+
+/*# sourceMappingURL=enter-key.css.map */

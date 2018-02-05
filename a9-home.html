@@ -36,7 +36,7 @@
 
                 <div class="div-some-scences">
                     <img src="img/Scene/Dinner.png" height="52" width="52"/>
-                    <p>Đi vắng</p>
+                    <p>Nay Đi vắng nhà</p>
                 </div>
 
                 <div class="div-some-scences">
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="div-line div-line-content-home"></div>
+            <div class="div-line div-line-content-home mrt-5"></div>
 
             <div class="div-just-use">
                 <p>Vừa sử dụng</p>
@@ -169,6 +169,18 @@
                         <p>Phòng khách</p>
                         <span>Trực tuyến</span>
                     </div>
+
+                    <div class="the-camera">
+                        <div class="camera-screen">
+                            <a href="#"><img src="img/screen.png" alt=""></a>
+                            <div class="div-activiti-posititon">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span>Đang ghi</span>
+                            </div>
+                        </div>
+                        <p>Phòng khách</p>
+                        <span>Trực tuyến</span>
+                    </div>
                 </div>
             </div>
 
@@ -224,10 +236,7 @@
                 <div class="clear-both"></div>
             </div>
             <div class="div-mousedown-content">
-                <div class="div-mousedown-event">
-                    <div class="div-line-mousedown div-line"></div>
-                    <div class="div-circle-mouserdown"></div>
-                </div>
+                <input class="brightness-lamp" type="range" value="">
                 <div class="div-percent-mousedown">
                     80  %
                 </div>
@@ -458,25 +467,45 @@
            $(this).addClass('active');
         });
 
-        $('.div-scences-usual').slick({
-            dots: false,
-            autoplay: false,
-            autoplaySpeed: 4000,
-            arrows: false,
-            slidesToShow: 4,
-            slidesToScroll: 3,
-            variableWidth: true
+        $('.div-some-scences').on('touchstart', function(e){
+            var scences = $(this).parents('.div-scences-usual');
+            var oldresult =  e.originalEvent.touches[0].pageX;
+            var handlers = {
+                touchmove : function(e){
+                    var result =  e.originalEvent.touches[0].pageX;
+                    kq = oldresult - result;
+                    oldresult = result;
+                    var leftPos = scences.scrollLeft();
+                    kq = leftPos + kq;
+                    scences.animate({ scrollLeft: kq }, 0);
+                },
+                touchend : function(e) {
+
+                    $(this).off(handlers);
+                }
+            };
+            $(document).on(handlers);
         });
 
-        $('.slide-camera').slick({
-            dots: false,
-            autoplay: false,
-            autoplaySpeed: 4000,
-            arrows: false,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            variableWidth: true,
+        $('.the-camera').on('touchstart', function (e) {
+            var camera = $(this).parents('.slide-camera');
+            var oldresultcam =  e.originalEvent.touches[0].pageX;
+            var handlers = {
+                touchmove : function(e){
+                    var resultcam =  e.originalEvent.touches[0].pageX;
+                    kq = oldresultcam - resultcam;
+                    oldresultcam = resultcam;
+                    var leftPos = camera.scrollLeft();
+                    kq = leftPos + kq;
+                    camera.animate({ scrollLeft: kq }, 0);
+                },
+                touchend : function(e) {
+                    $(this).off(handlers);
+                }
+            };
+            $(document).on(handlers);
         });
+
 
 //ĐÈN
         $('.close-div-setting-lamp').click(function () {
@@ -489,23 +518,21 @@
             $('.div-opacity-full-home').animate({'opacity': 0.8}, 400);
             $('.div-opacity-full-home').css({'z-index': 1001});
         });
-        $('.div-circle-mouserdown').on('touchstart', function(e){
-            var node = $(this);
+
+        var old_bri = $('.brightness-lamp').val();
+        $('.div-percent-mousedown').text(old_bri + '%');
+
+        $('.brightness-lamp').click(function () {
+            var val = $(this).val();
+            $('.div-percent-mousedown').text(val+"%");
+        });
+        $('.brightness-lamp').on('touchstart', function(e){
+            var bri_this = $(this);
             var handlers = {
                 touchmove : function(e){
-                    var result =  e.originalEvent.touches[0].pageX;
-                    if(result > 275){
-                        result = 275;
-                    }
-                    if(result < 25){
-                        result = 25;
-                    }
-                    node.css({
-                        left : result -25 + 'px'
-                    });
-                    var rePer = Math.floor((result- 25) *100 / 250);
-                    $('.div-percent-mousedown').text(rePer+"%");
-
+                    var bright = bri_this.val();
+                    console.log(bright);
+                    $('.div-percent-mousedown').text(bright+"%");
                 },
                 touchend : function(e){
                     $(this).off(handlers);
@@ -513,6 +540,7 @@
             };
             $(document).on(handlers);
         });
+
 
 //TIVI
         $('.the-tivi').click(function () {

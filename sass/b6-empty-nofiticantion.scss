@@ -1,0 +1,170 @@
+.the-room-content{
+  .wrap-content{
+    .div-content-b6-empty{
+      width: 325px;
+      margin: 0 auto;
+      height: auto;
+      position: relative;
+      padding-top: 70px;
+      .div-img-alert{
+        width: 92px;
+        height: 114px;
+        background-color: red;
+        margin-top: 45%;
+      }
+      h6{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 35px;
+      }
+      p{
+        width: auto;
+        color: #8b8b8b;
+        font-size: 15px;
+        font-style: normal;
+        font-stretch: normal;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 10px;
+        padding: 0 15px;
+      }
+    }
+
+    &.wrap-content-notifications{
+      overflow: auto;
+      height: 100%;
+      margin-top: 55px;
+      .ul-notifications{
+        margin: 30px 25px;
+        .title-ul{
+          font-weight: bold;
+          margin-bottom: 25px;
+        }
+        li{
+          margin: 15px 0;
+          &.li-uncheck{
+            .div-icon-time-noti .div-icon-noti{
+              background-color: #ff863b;
+            }
+            .div-content-noti .div-line-vertical{
+              background-color: #ff863b;
+            }
+            .div-text-noti .div-scences-noti{
+              color: #000;
+              
+            }
+          }
+          .div-icon-time-noti{
+            .div-icon-noti{
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: #ccc;
+              float: left;
+              i{
+                font-size: 10px;
+                color: #fff;
+                margin: 4px 0 0 5px;
+              }
+            }
+            .div-time-noti{
+              float: right;
+              font-size: 12px;
+              color: #ccc;
+              font-weight: 300;
+            }
+          }
+          .div-content-noti{
+            margin: 5px 9px;
+            .div-line-vertical{
+              height: 45px;
+              width: 2px;
+              background-color: #ccc;
+              float: left;
+            }
+            .div-text-noti{
+              color: #ccc;
+              font-size: 15px;
+              margin: 5px 0 5px 20px;
+              max-width: 80%;
+              .div-scences-noti{
+                margin-bottom: 5px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+    }
+    &.wrap-content-notification-alert{
+      margin-top: 0px;
+      .div-notification-alert{
+        .div-noti-alert1{
+          padding: 15px 25px;
+          background-color: #ff3a2f;
+          height: 80px;
+          border: 1px solid #ff3a2f;
+          .div-icon-alert1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            float: left;
+          }
+          .div-content-alert1{
+            width: auto;
+            float: left;
+            color: #fff;
+            margin: 0 0 0 20px;
+            .room-name{
+              font-size: 15px;
+              margin: 5px 0;
+            }
+          }
+          .div-time-alert-1{
+            float: right;
+            color: #fff;
+            text-align: right;
+            margin: 7px 0 0;
+            p{
+              font-size: 13px;
+            }
+          }
+
+          &.empty-noti{
+            height: 80px;
+            background: #ff853b;
+            box-shadow: 0px 6px 14px rgba(255,133,59,0.2);
+
+          }
+        }
+        .div-noti-alert2{
+          padding:  15px 0;
+          height: 49px;
+          background: #e4291f;
+          box-shadow: 0px 4px 14px rgba(229,41,31,0.2);
+          .div-off-alert{
+            color: #ececec;
+            float: left;
+            width: 50%;
+            text-align: center;
+          }
+          .div-see-camera{
+            color: #fff;
+            float: left;
+            width: 50%;
+            text-align: center;
+            a{
+              color: #fff;
+              padding:  10px;
+            }
+          }
+        }
+
+
+      }
+
+    }
+  }
+}

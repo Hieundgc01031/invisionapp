@@ -1,4 +1,5 @@
 @import "mixins";
+@import "variables";
 *{
   font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
   height : auto;
@@ -197,4 +198,55 @@
 
 ul{
   list-style: none;
+}
+
+.div-button-toggle{
+  margin-top: -5px;
+  .switch{
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    input{
+      display: none;
+    }
+    .slider{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transition: .4s;
+      transition: .4s;
+      background-color: #ccc;
+      border-radius: 2px;
+      &.round{
+        border-radius: 20px;
+        &:before{
+          border-radius: 50%;
+        }
+      }
+    }
+    .slider:before{
+      position: absolute;
+        content: "";
+        background-color: #fff;
+        height: 20px;
+        width: 20px;
+        left: 2px;
+        top: 2px;
+    }
+    input:checked + .slider{
+      background-color: $blue;
+    }
+    input:checked + .slider:before {
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px);
+    }
+
+  }
+}
+a{
+  text-decoration: none;
 }

@@ -174,4 +174,45 @@
 ul {
   list-style: none; }
 
+.div-button-toggle {
+  margin-top: -5px; }
+  .div-button-toggle .switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px; }
+    .div-button-toggle .switch input {
+      display: none; }
+    .div-button-toggle .switch .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transition: .4s;
+      transition: .4s;
+      background-color: #ccc;
+      border-radius: 2px; }
+      .div-button-toggle .switch .slider.round {
+        border-radius: 20px; }
+        .div-button-toggle .switch .slider.round:before {
+          border-radius: 50%; }
+    .div-button-toggle .switch .slider:before {
+      position: absolute;
+      content: "";
+      background-color: #fff;
+      height: 20px;
+      width: 20px;
+      left: 2px;
+      top: 2px; }
+    .div-button-toggle .switch input:checked + .slider {
+      background-color: #0097ee; }
+    .div-button-toggle .switch input:checked + .slider:before {
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px); }
+
+a {
+  text-decoration: none; }
+
 /*# sourceMappingURL=main.css.map */
