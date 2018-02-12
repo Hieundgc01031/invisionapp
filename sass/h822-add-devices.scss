@@ -66,3 +66,89 @@
     margin: 10px 0 20px;
   }
 }
+
+
+.h82-new-device-ul-check{
+  position: relative;
+  margin: 0 25px;
+  .title-group-check{
+    margin-bottom: 5px;
+    span{
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .lable-check{
+      width: auto;
+    }
+  }
+  .div-group-check{
+    width: 24px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    padding: 2px 4px;
+  }
+
+  .div-circle-check{
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: $blue;
+    display: none;
+    margin: 5px 0;
+    span{
+      display: block;
+      margin: 4px 7px;
+      font-size: 16px;
+    }
+  }
+  .div-circle-uncheck{
+    margin: 5px 0;
+    width: 25px;
+    float: right;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid $blue;
+    display: block;
+  }
+  input[type=checkbox] {
+    display: none;
+    &:checked + label {
+      .div-circle-check{
+        display: block;
+      }
+      .div-circle-uncheck{
+        display: none;
+      }
+    }
+  }
+  .li-device-check{
+    display: block;
+    margin: 5px 0;
+    label{
+      width: 100px !important;
+      height: 40px !important;
+      .div-img{
+        width: 40px;
+        float: left;
+        margin-right: 5px;
+      }
+      .div-text{
+        float: left;
+        margin: 10px;
+        width: 70%;
+      }
+      i{
+        float: right;
+        width: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+  .div-line{
+    margin: 10px 0 20px;
+  }
+}

@@ -11,28 +11,28 @@
     position: relative;
     margin: auto; }
     .a8-room-empty .a8-room-content .bars-top-bars {
-      padding-top: 50px; }
+      padding-top: 35px; }
       .a8-room-empty .a8-room-content .bars-top-bars > div > a {
         margin-right: 0; }
-    .a8-room-empty .a8-room-content .wrap-content {
+    .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel {
       position: relative;
       width: 375px;
       margin: 0 auto; }
-      .a8-room-empty .a8-room-content .wrap-content .icon-empty-room {
+      .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room {
         position: absolute;
         height: 115px;
         width: 128px;
         top: 230px;
         left: 124px;
         margin: 0; }
-        .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room {
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room {
           position: absolute;
           height: 115px;
           width: 105px;
           top: 0px;
           left: 17px;
           margin: 0; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .rectangle5 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .rectangle5 {
             background: #eeeef3;
             position: absolute;
             height: 91px;
@@ -40,7 +40,7 @@
             top: 13px;
             left: 66px;
             margin: 0; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .view4 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .view4 {
             position: absolute;
             height: 93px;
             width: 34px;
@@ -50,7 +50,7 @@
             border-radius: 1px;
             border-style: solid;
             border-color: #91a0ae; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .view5 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .view5 {
             background: #91a0ae;
             position: absolute;
             height: 2px;
@@ -59,21 +59,21 @@
             left: 15px;
             margin: 0;
             border-radius: 1px; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .image3 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .image3 {
             position: absolute;
             height: 115px;
             width: 67px;
             top: 0px;
             left: 0px;
             margin: 0; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .image4 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .image4 {
             position: absolute;
             height: 16px;
             width: 7px;
             top: 51px;
             left: 53px;
             margin: 0; }
-        .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .rectangle3 {
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .rectangle3 {
           background: rgba(255, 255, 255, 0);
           position: absolute;
           height: 113px;
@@ -82,7 +82,7 @@
           left: 82px;
           margin: 0;
           opacity: 0.25; }
-        .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .rectangle4 {
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .rectangle4 {
           background: #91a0ae;
           position: absolute;
           height: 2px;
@@ -91,7 +91,7 @@
           left: 124px;
           margin: 0;
           border-radius: 1px; }
-        .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .rectangle2 {
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .rectangle2 {
           background: #91a0ae;
           position: absolute;
           height: 2px;
@@ -100,62 +100,103 @@
           left: 0px;
           margin: 0;
           border-radius: 1px; }
-    .a8-room-empty .a8-room-content .no-room {
-      position: absolute;
-      height: auto;
-      width: auto;
-      top: 380px;
-      left: 105px;
-      margin: 0;
-      font-family: "San Francisco", Helvetica, Arial, serif;
-      font-size: 20.0px;
-      color: black;
-      text-align: center;
-      letter-spacing: 0.47px;
-      line-height: 24.0px; }
-    .a8-room-empty .a8-room-content .add-room {
-      position: absolute;
-      height: 18px;
-      width: 193px;
-      top: 419px;
-      left: 94px;
-      margin: 0; }
-      .a8-room-empty .a8-room-content .add-room .add-room-img {
+      .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .no-room {
         position: absolute;
-        height: 12px;
-        width: 12px;
-        top: 3px;
-        left: 45px;
+        height: auto;
+        width: auto;
+        top: 380px;
+        left: 105px;
+        margin: 0;
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 20.0px;
+        color: black;
+        text-align: center;
+        letter-spacing: 0.47px;
+        line-height: 24.0px; }
+      .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room {
+        position: absolute;
+        height: 18px;
+        width: 193px;
+        top: 419px;
+        left: 94px;
         margin: 0; }
-        .a8-room-empty .a8-room-content .add-room .add-room-img img {
-          position: relative;
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room .add-room-img {
+          position: absolute;
           height: 12px;
           width: 12px;
+          top: 3px;
+          left: 45px;
+          margin: 0; }
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room .add-room-img img {
+            position: relative;
+            height: 12px;
+            width: 12px;
+            top: 0px;
+            left: 0px;
+            margin: 0; }
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room .add-room-nh {
+          position: absolute;
+          height: auto;
+          width: auto;
           top: 0px;
           left: 0px;
-          margin: 0; }
-      .a8-room-empty .a8-room-content .add-room .add-room-nh {
-        position: absolute;
-        height: auto;
+          margin: 0;
+          font-size: 15.0px;
+          color: #8b8b8b;
+          text-align: left;
+          line-height: 17.0px; }
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room .add-room-tao {
+          position: absolute;
+          height: auto;
+          width: auto;
+          top: 0px;
+          left: 64px;
+          margin: 0;
+          font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+          font-size: 15.0px;
+          color: #8b8b8b;
+          text-align: left;
+          line-height: 17.0px; }
+    .a8-room-empty .a8-room-content .wrap-content-room-list {
+      padding-top: 80px; }
+      .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-1 {
+        display: none;
+        padding-bottom: 150px;
+        height: 100%;
+        overflow: auto;
         width: auto;
-        top: 0px;
-        left: 0px;
-        margin: 0;
-        font-size: 15.0px;
-        color: #8b8b8b;
-        text-align: left;
-        line-height: 17.0px; }
-      .a8-room-empty .a8-room-content .add-room .add-room-tao {
-        position: absolute;
-        height: auto;
-        width: auto;
-        top: 0px;
-        left: 64px;
-        margin: 0;
-        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
-        font-size: 15.0px;
-        color: #8b8b8b;
-        text-align: left;
-        line-height: 17.0px; }
+        min-width: 325px;
+        margin: 0 15px; }
+        .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-1 li {
+          margin: 10px 10px;
+          float: left;
+          width: 150px;
+          height: 110px;
+          box-shadow: 0px 2px 10px rgba(224, 224, 224, 0.4);
+          background-color: #fff;
+          border-radius: 8px;
+          text-align: center; }
+          .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-1 li img {
+            margin: 13px 0 5px; }
+          .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-1 li p {
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center; }
+      .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-2 {
+        margin: 0 25px;
+        height: 100%;
+        overflow: auto;
+        padding-bottom: 130px; }
+        .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-2 li {
+          padding: 5px 0;
+          font-size: 15px;
+          font-weight: bold; }
+          .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-2 li img {
+            width: 50px;
+            height: 50px; }
+          .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-2 li a {
+            color: #000;
+            display: block; }
 
 /*# sourceMappingURL=a8-room-empty.css.map */

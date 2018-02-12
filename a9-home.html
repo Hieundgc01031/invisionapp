@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/slick/slick.css">
-    <script src="css/slick/slick.min.js"></script>
     <title>A9 HOME</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.js"></script>
 </head>
 <body>
 <div class="the-room">
@@ -17,51 +17,68 @@
                 <span>Chào buổi sáng</span>
                 <p>Hải Uyên</p>
             </div>
+            <div class="wrap-content-scences">
+                <div class="div-scences-usual">
+                    <div class="div-some-scences">
+                        <img src="img/Scene/BackHome.png" height="52" width="52"/>
+                        <p>Ở nhà</p>
+                    </div>
 
-            <div class="div-scences-usual">
-                <div class="div-some-scences">
-                    <img src="img/Scene/BackHome.png" height="52" width="52"/>
-                    <p>Ở nhà</p>
-                </div>
+                    <div class="div-some-scences">
+                        <img src="img/Scene/Guest.png" height="52" width="52"/>
+                        <p>Buổi sáng</p>
+                    </div>
 
-                <div class="div-some-scences">
-                    <img src="img/Scene/Guest.png" height="52" width="52"/>
-                    <p>Buổi sáng</p>
-                </div>
+                    <div class="div-some-scences">
+                        <img src="img/Scene/GoOut.png" height="52" width="52"/>
+                        <p>Ở nhà</p>
+                    </div>
 
-                <div class="div-some-scences">
-                    <img src="img/Scene/GoOut.png" height="52" width="52"/>
-                    <p>Ở nhà</p>
-                </div>
+                    <div class="div-some-scences">
+                        <img src="img/Scene/Dinner.png" height="52" width="52"/>
+                        <p>Nay Đi vắng nhà</p>
+                    </div>
 
-                <div class="div-some-scences">
-                    <img src="img/Scene/Dinner.png" height="52" width="52"/>
-                    <p>Nay Đi vắng nhà</p>
-                </div>
+                    <div class="div-some-scences">
+                        <img src="img/Scene/CloseCurtain.png" height="52" width="52"/>
+                        <p>Ở nhà</p>
+                    </div>
 
-                <div class="div-some-scences">
-                    <img src="img/Scene/CloseCurtain.png" height="52" width="52"/>
-                    <p>Ở nhà</p>
-                </div>
+                    <div class="div-some-scences">
+                        <img src="img/Scene/BedTime.png" height="52" width="52"/>
+                        <p>Đi ngủ</p>
+                    </div>
 
-                <div class="div-some-scences">
-                    <img src="img/Scene/BedTime.png" height="52" width="52"/>
-                    <p>Đi ngủ</p>
+                    <div class="div-some-scences">
+                        <img src="img/Scene/Dinner.png" height="52" width="52"/>
+                        <p>Nay Đi vắng nhà</p>
+                    </div>
+
+                    <div class="div-some-scences">
+                        <img src="img/Scene/CloseCurtain.png" height="52" width="52"/>
+                        <p>Ở nhà</p>
+                    </div>
+
+                    <div class="div-some-scences">
+                        <img src="img/Scene/BedTime.png" height="52" width="52"/>
+                        <p>Đi ngủ</p>
+                    </div>
                 </div>
             </div>
-
             <div class="div-line div-line-content-home mrt-5"></div>
 
             <div class="div-just-use">
                 <p>Vừa sử dụng</p>
                 <div class="div-lamp div-device">
-                    <div class="the-device the-lamp">
+                    <div class="the-device the-lamp active">
                         <div class="icon-the-device">
-                            <img src="img/Light/DenTha.png" height="40" width="40"/>
+                            <img class="on" src="img/Light/DenTha.png" height="40" width="40"/>
+                            <img class="off" src="img/Light/Fish.png" height="40" width="40"/>
                         </div>
                         <div class="text-the-device">
                             <p>Đèn trần</p>
-                            <span>Mở - 75%</span>
+                            <span class="on">Mở - 75%</span>
+                            <span class="off">Tắt</span>
                         </div>
                     </div>
                 </div>
@@ -69,11 +86,13 @@
                 <div class="div-lamp div-device">
                     <div class="the-device the-lamp">
                         <div class="icon-the-device">
-                            <img src="img/Light/DenTha.png" height="40" width="40"/>
+                            <img class="on" src="img/Light/DenTha.png" height="40" width="40"/>
+                            <img class="off" src="img/Light/Fish.png" height="40" width="40"/>
                         </div>
                         <div class="text-the-device">
                             <p>Đèn trần</p>
-                            <span>Mở - 75%</span>
+                            <span class="on">Mở - 75%</span>
+                            <span class="off">Tắt</span>
                         </div>
                     </div>
                 </div>
@@ -85,19 +104,21 @@
                         </div>
                         <div class="text-the-device">
                             <p>Tivi</p>
-                            <span>Mở - 75%</span>
+                            <span class="on">Mở</span>
+                            <span class="off">Tắt</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="div-conditioning div-device">
-                    <div class="the-conditioning the-device">
+                    <div class="the-conditioning the-device active">
                         <div class="icon-the-device ">
                             <img src="img/Light/DenTha.png" height="40" width="40"/>
                         </div>
-                        <div class="text-the-device">
+                        <div class="text-the-device ">
                             <p>Điều hòa</p>
-                            <span>Mở - 75%</span>
+                            <span class="on">Mở</span>
+                            <span class="off">Tắt</span>
                         </div>
                     </div>
                 </div>
@@ -467,43 +488,21 @@
            $(this).addClass('active');
         });
 
-        $('.div-some-scences').on('touchstart', function(e){
-            var scences = $(this).parents('.div-scences-usual');
-            var oldresult =  e.originalEvent.touches[0].pageX;
-            var handlers = {
-                touchmove : function(e){
-                    var result =  e.originalEvent.touches[0].pageX;
-                    kq = oldresult - result;
-                    oldresult = result;
-                    var leftPos = scences.scrollLeft();
-                    kq = leftPos + kq;
-                    scences.animate({ scrollLeft: kq }, 0);
-                },
-                touchend : function(e) {
-
-                    $(this).off(handlers);
-                }
-            };
-            $(document).on(handlers);
+        $('.slide-camera').slick({
+            infinite: false,
+            variableWidth: true,
+            initialSlide: 0,
+            outerEdgeLimit: true,
+            arrows: false,
+            slidesToScroll: 2,
         });
-
-        $('.the-camera').on('touchstart', function (e) {
-            var camera = $(this).parents('.slide-camera');
-            var oldresultcam =  e.originalEvent.touches[0].pageX;
-            var handlers = {
-                touchmove : function(e){
-                    var resultcam =  e.originalEvent.touches[0].pageX;
-                    kq = oldresultcam - resultcam;
-                    oldresultcam = resultcam;
-                    var leftPos = camera.scrollLeft();
-                    kq = leftPos + kq;
-                    camera.animate({ scrollLeft: kq }, 0);
-                },
-                touchend : function(e) {
-                    $(this).off(handlers);
-                }
-            };
-            $(document).on(handlers);
+        $(".div-scences-usual").slick({
+            slidesToScroll: 2,
+            infinite: false,
+            variableWidth: true,
+            initialSlide: 0,
+            outerEdgeLimit: true,
+            arrows: false,
         });
 
 
@@ -513,10 +512,31 @@
             $('.div-opacity-full-home').animate({'opacity': 0}, 400);
             $('.div-opacity-full-home').css({'z-index': -1});
         });
+        // $('.the-lamp').on('touchstart', function (e) {
+        //     alert();
+        //     $('.div-setting-lamp').animate({bottom: '0'}, 400);
+        //     $('.div-opacity-full-home').animate({'opacity': 0.8}, 400);
+        //     $('.div-opacity-full-home').css({'z-index': 1001});
+        // });
+        // var val = 0;
+
+        $('.the-lamp').on('touchstart',function (e) {
+            var val = 0;
+            setint = setInterval(function () {
+                val = val +1;
+                if(val > 4){
+                    console.log(val);
+                    $('.div-setting-lamp').animate({bottom: '0'}, 400);
+                    $('.div-opacity-full-home').animate({'opacity': 0.8}, 400);
+                    $('.div-opacity-full-home').css({'z-index': 1001});
+                }
+            },200);
+        });
+        $('.the-lamp').on("touchend", function () {
+            clearInterval(setint);
+        });
         $('.the-lamp').click(function () {
-            $('.div-setting-lamp').animate({bottom: '0'}, 400);
-            $('.div-opacity-full-home').animate({'opacity': 0.8}, 400);
-            $('.div-opacity-full-home').css({'z-index': 1001});
+           $(this).toggleClass('active');
         });
 
         var old_bri = $('.brightness-lamp').val();
@@ -531,7 +551,6 @@
             var handlers = {
                 touchmove : function(e){
                     var bright = bri_this.val();
-                    console.log(bright);
                     $('.div-percent-mousedown').text(bright+"%");
                 },
                 touchend : function(e){

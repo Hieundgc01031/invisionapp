@@ -31,38 +31,61 @@
     }
 
     .div-activity{
-      margin: 25px 20px 0 20px;
+      margin: 25px 25px 0 20px;
       width: auto;
       overflow: hidden;
-      white-space: nowrap;
       .the-activity{
-        display: inline-block;
-        margin: 5px 15px 3px 3px;
-        @include boxshad;
-        border-radius: 5px;
-        height: 60px;
-        width: 155px;
+         display: inline-block;
+         margin: 5px 15px 3px 3px;
+         @include boxshad;
+         border-radius: 5px;
+         height: 60px;
+         width: 155px;
+         outline: none;
+         position: relative;
+         .icon-the-activity{
+           width: 20px;
+           @include positonabtl(20px, 20px);
+         }
+         .text-the-activity{
+           width: auto;
+           white-space: normal;
+           @include positonabtl(22px, 50px);
+           font-weight: bold;
+           font-size: 15px;
+           color: #b7b7b7;
+           max-height: 34px;
+           overflow: hidden;
+           padding-right: 5px;
+         }
+         &.active{
+           .text-the-activity{
+             color: #000;
+           }
+         }
+       }
+
+      .div-some-scences{
+        width: 75px;
+        height: auto;
+        padding: 0 5px;
+        margin: 0;
         outline: none;
-        position: relative;
-        .icon-the-activity{
-          width: 20px;
-          @include positonabtl(20px, 20px);
-        }
-        .text-the-activity{
+        color: #c2c2c2;
+        text-align: center;
+        p{
+          margin-top: 10px;
           width: auto;
-          white-space: normal;
-          @include positonabtl(22px, 50px);
-          font-weight: bold;
-          font-size: 15px;
-          color: #b7b7b7;
-          max-height: 34px;
+          height: 32px;
           overflow: hidden;
-          padding-right: 5px;
+          white-space: initial;
+        }
+        img{
+          width: 50px;
         }
         &.active{
-          .text-the-activity{
-            color: #000;
-          }
+          color: #000;
+          font-weight: bold;
         }
       }
     }
@@ -85,11 +108,11 @@
       width: auto;
       margin-left: 23px;
       overflow: hidden;
-      white-space: nowrap;
       padding-right: 1px;
-
+      .slick-list{
+        padding-left: 2px;
+      }
       .the-lamp{
-        display: inline-block;
         background: #fff;
         width: 102px;
         margin: 3px 13px 3px 1px;
@@ -107,6 +130,12 @@
             width: 40px;
             height: 40px;
           }
+          img.on{
+            display: none;
+          }
+          img.off{
+            display: block;
+          }
         }
         .text-the-lamp{
           p{
@@ -117,6 +146,31 @@
           span{
             margin: 5px 10px 10px 10px;
             color: #c2c2c2;
+          }
+          span.off{
+            display: block;
+          }
+          span.on{
+            display: none;
+          }
+        }
+
+        &.active{
+          .text-the-lamp{
+            span.off{
+              display: none;
+            }
+            span.on{
+              display: block;
+            }
+          }
+          .icon-the-lamp{
+            img.on{
+              display: block;
+            }
+            img.off{
+              display: none;
+            }
           }
         }
       }
@@ -130,7 +184,7 @@
   margin: 10px 25px 15px;
   height: auto;
   background-color: rgba(250, 250, 250, 0.8);
-  padding: 10px 0 10px 10px;
+  padding: 10px 5px 10px 10px;
   border-radius: 8px;
 
   .div-lamp{

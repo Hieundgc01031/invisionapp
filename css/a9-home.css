@@ -14,15 +14,12 @@
 .wrap-content-home .div-scences-usual {
   margin: 25px 20px 5px;
   padding-right: 1px;
-  width: auto;
-  overflow: hidden;
-  white-space: nowrap; }
+  width: auto; }
   .wrap-content-home .div-scences-usual .div-some-scences {
-    display: inline-block;
-    width: 80px;
+    width: 75px;
     height: auto;
     padding: 0 5px;
-    margin: 0 -2px;
+    margin: 0;
     outline: none;
     color: #c2c2c2;
     text-align: center; }
@@ -76,6 +73,26 @@
       .wrap-content-home .div-just-use .div-device .the-device .text-the-device span {
         margin: 5px 10px 10px 10px;
         color: #c2c2c2; }
+      .wrap-content-home .div-just-use .div-device .the-device .text-the-device span.off {
+        display: block; }
+      .wrap-content-home .div-just-use .div-device .the-device .text-the-device span.on {
+        display: none; }
+      .wrap-content-home .div-just-use .div-device .the-device.active .text-the-device span.off {
+        display: none; }
+      .wrap-content-home .div-just-use .div-device .the-device.active .text-the-device span.on {
+        display: block; }
+      .wrap-content-home .div-just-use .div-device .the-device.the-lamp .icon-the-device img.on {
+        display: none; }
+      .wrap-content-home .div-just-use .div-device .the-device.the-lamp .icon-the-device img.off {
+        display: block; }
+      .wrap-content-home .div-just-use .div-device .the-device.the-lamp.active .icon-the-device img.off {
+        display: none; }
+      .wrap-content-home .div-just-use .div-device .the-device.the-lamp.active .icon-the-device img.on {
+        display: block; }
+    .wrap-content-home .div-just-use .div-device.active .text-the-device span.off {
+      display: none; }
+    .wrap-content-home .div-just-use .div-device.active .text-the-device span.on {
+      display: block; }
 .wrap-content-home .div-camera-user {
   padding-bottom: 60px; }
   .wrap-content-home .div-camera-user > p {
@@ -84,13 +101,11 @@
     font-weight: bold;
     font-size: 16px; }
   .wrap-content-home .div-camera-user .slide-camera {
-    white-space: nowrap;
     margin-right: 15px;
     margin-left: 23px;
     overflow: hidden;
     width: auto; }
     .wrap-content-home .div-camera-user .slide-camera .the-camera {
-      display: inline-block;
       margin: 1px 10px 1px 1px;
       width: 165px;
       height: auto; }

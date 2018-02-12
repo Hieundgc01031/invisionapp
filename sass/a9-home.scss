@@ -21,14 +21,11 @@
     margin: 25px 20px 5px;
     padding-right: 1px;
     width: auto;
-    overflow: hidden;
-    white-space: nowrap;
     .div-some-scences{
-      display: inline-block;
-      width: 80px;
+      width: 75px;
       height: auto;
       padding: 0 5px;
-      margin: 0 -2px;
+      margin: 0;
       outline: none;
       color: #c2c2c2;
       text-align: center;
@@ -96,6 +93,54 @@
             margin: 5px 10px 10px 10px;
             color: #c2c2c2;
           }
+          span.off{
+            display: block;
+          }
+          span.on{
+            display: none;
+          }
+        }
+        &.active{
+          .text-the-device{
+            span.off{
+              display: none;
+            }
+            span.on{
+              display: block;
+            }
+          }
+        }
+        &.the-lamp{
+          .icon-the-device{
+            img.on{
+              display: none;
+            }
+            img.off{
+              display: block;
+            }
+          }
+
+          &.active{
+            .icon-the-device{
+              img.off{
+                display: none;
+              }
+              img.on{
+                display: block;
+              }
+            }
+
+          }
+        }
+      }
+      &.active{
+        .text-the-device{
+          span.off{
+            display: none;
+          }
+          span.on{
+            display: block;
+          }
         }
       }
     }
@@ -108,16 +153,13 @@
       margin: 20px 25px 5px;
       font-weight: bold;
       font-size: 16px;
-
     }
     .slide-camera{
-      white-space: nowrap;
       margin-right: 15px;
       margin-left: 23px;
       overflow: hidden;
       width: auto;
       .the-camera{
-        display: inline-block;
         margin: 1px 10px 1px 1px;
         width: 165px;
         height: auto;

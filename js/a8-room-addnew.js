@@ -41,12 +41,12 @@ $(document).ready(function () {
     $('.div-bgc-plus-scences').click(function () {
         $('.div-select-icon-scences').animate({bottom: '0'}, 400);
         $('.div-opacity-full-scences').animate({'opacity': 0.8}, 400);
-        $('.div-opacity-full-scences').css({'z-index': 10});
+        $('.div-opacity-full-scences').css({'z-index': 2000});
     });
     $('.text-add-icon-scences').click(function () {
         $('.div-select-icon-scences').animate({bottom: '0'}, 400);
         $('.div-opacity-full-scences').animate({'opacity': 0.8}, 400);
-        $('.div-opacity-full-scences').css({'z-index': 10});
+        $('.div-opacity-full-scences').css({'z-index': 2000});
     });
 
 

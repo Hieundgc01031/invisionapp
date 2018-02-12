@@ -1,0 +1,25 @@
+.the-room{
+  .a5-switch-config{
+    .wrap-content-switch-config{
+      .switch-config-room-name{
+        margin-bottom: 20px;
+        padding: 0 25px;
+        p{
+          margin: 10px 0;
+        }
+        .div-img-select-room{
+          float: left;
+        }
+        select{
+          float: right;
+          padding: 5px 0;
+          border: 0;
+          outline: 0;
+          font-size: 15px;
+          width: 82%;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}

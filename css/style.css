@@ -489,28 +489,28 @@ a {
     position: relative;
     margin: auto; }
     .a8-room-empty .a8-room-content .bars-top-bars {
-      padding-top: 50px; }
+      padding-top: 35px; }
       .a8-room-empty .a8-room-content .bars-top-bars > div > a {
         margin-right: 0; }
-    .a8-room-empty .a8-room-content .wrap-content {
+    .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel {
       position: relative;
       width: 375px;
       margin: 0 auto; }
-      .a8-room-empty .a8-room-content .wrap-content .icon-empty-room {
+      .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room {
         position: absolute;
         height: 115px;
         width: 128px;
         top: 230px;
         left: 124px;
         margin: 0; }
-        .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room {
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room {
           position: absolute;
           height: 115px;
           width: 105px;
           top: 0px;
           left: 17px;
           margin: 0; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .rectangle5 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .rectangle5 {
             background: #eeeef3;
             position: absolute;
             height: 91px;
@@ -518,7 +518,7 @@ a {
             top: 13px;
             left: 66px;
             margin: 0; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .view4 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .view4 {
             position: absolute;
             height: 93px;
             width: 34px;
@@ -528,7 +528,7 @@ a {
             border-radius: 1px;
             border-style: solid;
             border-color: #91a0ae; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .view5 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .view5 {
             background: #91a0ae;
             position: absolute;
             height: 2px;
@@ -537,21 +537,21 @@ a {
             left: 15px;
             margin: 0;
             border-radius: 1px; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .image3 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .image3 {
             position: absolute;
             height: 115px;
             width: 67px;
             top: 0px;
             left: 0px;
             margin: 0; }
-          .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .group-room .image4 {
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .group-room .image4 {
             position: absolute;
             height: 16px;
             width: 7px;
             top: 51px;
             left: 53px;
             margin: 0; }
-        .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .rectangle3 {
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .rectangle3 {
           background: rgba(255, 255, 255, 0);
           position: absolute;
           height: 113px;
@@ -560,7 +560,7 @@ a {
           left: 82px;
           margin: 0;
           opacity: 0.25; }
-        .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .rectangle4 {
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .rectangle4 {
           background: #91a0ae;
           position: absolute;
           height: 2px;
@@ -569,7 +569,7 @@ a {
           left: 124px;
           margin: 0;
           border-radius: 1px; }
-        .a8-room-empty .a8-room-content .wrap-content .icon-empty-room .rectangle2 {
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .icon-empty-room .rectangle2 {
           background: #91a0ae;
           position: absolute;
           height: 2px;
@@ -578,63 +578,104 @@ a {
           left: 0px;
           margin: 0;
           border-radius: 1px; }
-    .a8-room-empty .a8-room-content .no-room {
-      position: absolute;
-      height: auto;
-      width: auto;
-      top: 380px;
-      left: 105px;
-      margin: 0;
-      font-family: "San Francisco", Helvetica, Arial, serif;
-      font-size: 20.0px;
-      color: black;
-      text-align: center;
-      letter-spacing: 0.47px;
-      line-height: 24.0px; }
-    .a8-room-empty .a8-room-content .add-room {
-      position: absolute;
-      height: 18px;
-      width: 193px;
-      top: 419px;
-      left: 94px;
-      margin: 0; }
-      .a8-room-empty .a8-room-content .add-room .add-room-img {
+      .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .no-room {
         position: absolute;
-        height: 12px;
-        width: 12px;
-        top: 3px;
-        left: 45px;
+        height: auto;
+        width: auto;
+        top: 380px;
+        left: 105px;
+        margin: 0;
+        font-family: "San Francisco", Helvetica, Arial, serif;
+        font-size: 20.0px;
+        color: black;
+        text-align: center;
+        letter-spacing: 0.47px;
+        line-height: 24.0px; }
+      .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room {
+        position: absolute;
+        height: 18px;
+        width: 193px;
+        top: 419px;
+        left: 94px;
         margin: 0; }
-        .a8-room-empty .a8-room-content .add-room .add-room-img img {
-          position: relative;
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room .add-room-img {
+          position: absolute;
           height: 12px;
           width: 12px;
+          top: 3px;
+          left: 45px;
+          margin: 0; }
+          .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room .add-room-img img {
+            position: relative;
+            height: 12px;
+            width: 12px;
+            top: 0px;
+            left: 0px;
+            margin: 0; }
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room .add-room-nh {
+          position: absolute;
+          height: auto;
+          width: auto;
           top: 0px;
           left: 0px;
-          margin: 0; }
-      .a8-room-empty .a8-room-content .add-room .add-room-nh {
-        position: absolute;
-        height: auto;
+          margin: 0;
+          font-size: 15.0px;
+          color: #8b8b8b;
+          text-align: left;
+          line-height: 17.0px; }
+        .a8-room-empty .a8-room-content .wrap-content .div-no-room-rel .add-room .add-room-tao {
+          position: absolute;
+          height: auto;
+          width: auto;
+          top: 0px;
+          left: 64px;
+          margin: 0;
+          font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+          font-size: 15.0px;
+          color: #8b8b8b;
+          text-align: left;
+          line-height: 17.0px; }
+    .a8-room-empty .a8-room-content .wrap-content-room-list {
+      padding-top: 80px; }
+      .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-1 {
+        display: none;
+        padding-bottom: 150px;
+        height: 100%;
+        overflow: auto;
         width: auto;
-        top: 0px;
-        left: 0px;
-        margin: 0;
-        font-size: 15.0px;
-        color: #8b8b8b;
-        text-align: left;
-        line-height: 17.0px; }
-      .a8-room-empty .a8-room-content .add-room .add-room-tao {
-        position: absolute;
-        height: auto;
-        width: auto;
-        top: 0px;
-        left: 64px;
-        margin: 0;
-        font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
-        font-size: 15.0px;
-        color: #8b8b8b;
-        text-align: left;
-        line-height: 17.0px; }
+        min-width: 325px;
+        margin: 0 15px; }
+        .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-1 li {
+          margin: 10px 10px;
+          float: left;
+          width: 150px;
+          height: 110px;
+          box-shadow: 0px 2px 10px rgba(224, 224, 224, 0.4);
+          background-color: #fff;
+          border-radius: 8px;
+          text-align: center; }
+          .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-1 li img {
+            margin: 13px 0 5px; }
+          .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-1 li p {
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center; }
+      .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-2 {
+        margin: 0 25px;
+        height: 100%;
+        overflow: auto;
+        padding-bottom: 130px; }
+        .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-2 li {
+          padding: 5px 0;
+          font-size: 15px;
+          font-weight: bold; }
+          .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-2 li img {
+            width: 50px;
+            height: 50px; }
+          .a8-room-empty .a8-room-content .wrap-content-room-list ul.versiron-2 li a {
+            color: #000;
+            display: block; }
 
 .g8-room-list .g8-room-content .wrap-content {
   width: 325px;
@@ -702,10 +743,9 @@ a {
       color: #c0c0c0;
       margin-left: 2px; }
   .a8-room-grid .wrap-content .div-activity {
-    margin: 25px 20px 0 20px;
+    margin: 25px 25px 0 20px;
     width: auto;
-    overflow: hidden;
-    white-space: nowrap; }
+    overflow: hidden; }
     .a8-room-grid .wrap-content .div-activity .the-activity {
       display: inline-block;
       margin: 5px 15px 3px 3px;
@@ -734,6 +774,25 @@ a {
         padding-right: 5px; }
       .a8-room-grid .wrap-content .div-activity .the-activity.active .text-the-activity {
         color: #000; }
+    .a8-room-grid .wrap-content .div-activity .div-some-scences {
+      width: 75px;
+      height: auto;
+      padding: 0 5px;
+      margin: 0;
+      outline: none;
+      color: #c2c2c2;
+      text-align: center; }
+      .a8-room-grid .wrap-content .div-activity .div-some-scences p {
+        margin-top: 10px;
+        width: auto;
+        height: 32px;
+        overflow: hidden;
+        white-space: initial; }
+      .a8-room-grid .wrap-content .div-activity .div-some-scences img {
+        width: 50px; }
+      .a8-room-grid .wrap-content .div-activity .div-some-scences.active {
+        color: #000;
+        font-weight: bold; }
   .a8-room-grid .wrap-content .div-line-activity {
     margin-left: 25px;
     margin-right: 25px;
@@ -749,10 +808,10 @@ a {
     width: auto;
     margin-left: 23px;
     overflow: hidden;
-    white-space: nowrap;
     padding-right: 1px; }
+    .a8-room-grid .wrap-content .div-lamp .slick-list {
+      padding-left: 2px; }
     .a8-room-grid .wrap-content .div-lamp .the-lamp {
-      display: inline-block;
       background: #fff;
       width: 102px;
       margin: 3px 13px 3px 1px;
@@ -769,6 +828,10 @@ a {
         .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img {
           width: 40px;
           height: 40px; }
+        .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img.on {
+          display: none; }
+        .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img.off {
+          display: block; }
       .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp p {
         margin: 5px 10px;
         font-weight: bold;
@@ -776,13 +839,25 @@ a {
       .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span {
         margin: 5px 10px 10px 10px;
         color: #c2c2c2; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span.off {
+        display: block; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span.on {
+        display: none; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .text-the-lamp span.off {
+        display: none; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .text-the-lamp span.on {
+        display: block; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .icon-the-lamp img.on {
+        display: block; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .icon-the-lamp img.off {
+        display: none; }
 
 .div-bgc-25 {
   overflow: hidden;
   margin: 10px 25px 15px;
   height: auto;
   background-color: rgba(250, 250, 250, 0.8);
-  padding: 10px 0 10px 10px;
+  padding: 10px 5px 10px 10px;
   border-radius: 8px; }
   .div-bgc-25 .div-lamp {
     margin-left: 0 !important;
@@ -794,7 +869,7 @@ a {
     margin-bottom: 10px; }
 
 .a8-room-details .wrap-content {
-  margin-top: 100px;
+  margin-top: 80px;
   padding-bottom: 155px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -821,32 +896,6 @@ a {
     margin-top: 30px;
     width: auto;
     margin-left: 23px; }
-    .a8-room-details .wrap-content .div-activity .slick-list {
-      padding-left: 3px; }
-    .a8-room-details .wrap-content .div-activity .the-activity {
-      margin: 3px 13px 10px 3px;
-      float: left;
-      box-shadow: 0px 2px 10px 2px rgba(224, 224, 224, 0.4);
-      border-radius: 5px;
-      height: 60px;
-      width: 156px;
-      outline: none;
-      position: relative; }
-      .a8-room-details .wrap-content .div-activity .the-activity .icon-the-activity {
-        width: 20px;
-        position: absolute;
-        top: 20px;
-        left: 20px; }
-      .a8-room-details .wrap-content .div-activity .the-activity .text-the-activity {
-        width: auto;
-        position: absolute;
-        top: 22px;
-        left: 50px;
-        font-weight: bold;
-        font-size: 15px;
-        color: #b7b7b7; }
-        .a8-room-details .wrap-content .div-activity .the-activity .text-the-activity.active {
-          color: #000; }
   .a8-room-details .wrap-content .div-line-activity {
     margin-left: 25px;
     background-color: #e4e4e4;
@@ -908,7 +957,12 @@ a {
       background-color: #c4c4c4;
       text-align: center;
       font-size: 22px;
+      position: relative;
       padding-top: 15px; }
+      .a8-room-addnew .wrap-content .div-add-icon .icon-add .div-bgc-plus img {
+        position: absolute;
+        top: 0;
+        left: 0; }
   .a8-room-addnew .wrap-content .div-add-icon .text-add-icon {
     float: right;
     width: auto;
@@ -976,7 +1030,7 @@ a {
       font-size: 20px;
       color: #0097ee; }
       .a8-room-addnew .wrap-content .div-info-addroom .icon-add-pos a.a-plus-scences {
-        display: block; }
+        display: inline; }
       .a8-room-addnew .wrap-content .div-info-addroom .icon-add-pos a.a-plus-devices {
         display: none; }
   .a8-room-addnew .wrap-content .div-info-addroom .div-line-info-add {
@@ -1169,6 +1223,9 @@ a {
         width: 50px;
         height: 50px; }
 
+.a8-room-addnew.h82-new-device .wrap-content {
+  padding-bottom: 100px; }
+
 .ul-group-check {
   position: relative;
   margin: 0 25px; }
@@ -1218,6 +1275,71 @@ a {
   .ul-group-check .div-line {
     margin: 10px 0 20px; }
 
+.h82-new-device-ul-check {
+  position: relative;
+  margin: 0 25px; }
+  .h82-new-device-ul-check .title-group-check {
+    margin-bottom: 5px; }
+    .h82-new-device-ul-check .title-group-check span {
+      font-size: 15px;
+      font-weight: bold; }
+    .h82-new-device-ul-check .title-group-check .lable-check {
+      width: auto; }
+  .h82-new-device-ul-check .div-group-check {
+    width: 24px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    padding: 2px 4px; }
+  .h82-new-device-ul-check .div-circle-check {
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #0097ee;
+    display: none;
+    margin: 5px 0; }
+    .h82-new-device-ul-check .div-circle-check span {
+      display: block;
+      margin: 4px 7px;
+      font-size: 16px; }
+  .h82-new-device-ul-check .div-circle-uncheck {
+    margin: 5px 0;
+    width: 25px;
+    float: right;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #0097ee;
+    display: block; }
+  .h82-new-device-ul-check input[type=checkbox] {
+    display: none; }
+    .h82-new-device-ul-check input[type=checkbox]:checked + label .div-circle-check {
+      display: block; }
+    .h82-new-device-ul-check input[type=checkbox]:checked + label .div-circle-uncheck {
+      display: none; }
+  .h82-new-device-ul-check .li-device-check {
+    display: block;
+    margin: 5px 0; }
+    .h82-new-device-ul-check .li-device-check label {
+      width: 100px !important;
+      height: 40px !important; }
+      .h82-new-device-ul-check .li-device-check label .div-img {
+        width: 40px;
+        float: left;
+        margin-right: 5px; }
+      .h82-new-device-ul-check .li-device-check label .div-text {
+        float: left;
+        margin: 10px;
+        width: 70%; }
+      .h82-new-device-ul-check .li-device-check label i {
+        float: right;
+        width: auto;
+        margin-top: 10px; }
+  .h82-new-device-ul-check .div-line {
+    margin: 10px 0 20px; }
+
 .the-room-content-home {
   overflow: auto; }
 
@@ -1234,15 +1356,12 @@ a {
 .wrap-content-home .div-scences-usual {
   margin: 25px 20px 5px;
   padding-right: 1px;
-  width: auto;
-  overflow: hidden;
-  white-space: nowrap; }
+  width: auto; }
   .wrap-content-home .div-scences-usual .div-some-scences {
-    display: inline-block;
-    width: 80px;
+    width: 75px;
     height: auto;
     padding: 0 5px;
-    margin: 0 -2px;
+    margin: 0;
     outline: none;
     color: #c2c2c2;
     text-align: center; }
@@ -1296,6 +1415,26 @@ a {
       .wrap-content-home .div-just-use .div-device .the-device .text-the-device span {
         margin: 5px 10px 10px 10px;
         color: #c2c2c2; }
+      .wrap-content-home .div-just-use .div-device .the-device .text-the-device span.off {
+        display: block; }
+      .wrap-content-home .div-just-use .div-device .the-device .text-the-device span.on {
+        display: none; }
+      .wrap-content-home .div-just-use .div-device .the-device.active .text-the-device span.off {
+        display: none; }
+      .wrap-content-home .div-just-use .div-device .the-device.active .text-the-device span.on {
+        display: block; }
+      .wrap-content-home .div-just-use .div-device .the-device.the-lamp .icon-the-device img.on {
+        display: none; }
+      .wrap-content-home .div-just-use .div-device .the-device.the-lamp .icon-the-device img.off {
+        display: block; }
+      .wrap-content-home .div-just-use .div-device .the-device.the-lamp.active .icon-the-device img.off {
+        display: none; }
+      .wrap-content-home .div-just-use .div-device .the-device.the-lamp.active .icon-the-device img.on {
+        display: block; }
+    .wrap-content-home .div-just-use .div-device.active .text-the-device span.off {
+      display: none; }
+    .wrap-content-home .div-just-use .div-device.active .text-the-device span.on {
+      display: block; }
 .wrap-content-home .div-camera-user {
   padding-bottom: 60px; }
   .wrap-content-home .div-camera-user > p {
@@ -1304,13 +1443,11 @@ a {
     font-weight: bold;
     font-size: 16px; }
   .wrap-content-home .div-camera-user .slide-camera {
-    white-space: nowrap;
     margin-right: 15px;
     margin-left: 23px;
     overflow: hidden;
     width: auto; }
     .wrap-content-home .div-camera-user .slide-camera .the-camera {
-      display: inline-block;
       margin: 1px 10px 1px 1px;
       width: 165px;
       height: auto; }
@@ -1860,6 +1997,22 @@ a {
       .the-room-content .wrap-content.wrap-content-notification-alert .div-notification-alert .div-noti-alert2 .div-see-camera a {
         color: #fff;
         padding: 10px; }
+
+.the-room .a5-switch-config .wrap-content-switch-config .switch-config-room-name {
+  margin-bottom: 20px;
+  padding: 0 25px; }
+  .the-room .a5-switch-config .wrap-content-switch-config .switch-config-room-name p {
+    margin: 10px 0; }
+  .the-room .a5-switch-config .wrap-content-switch-config .switch-config-room-name .div-img-select-room {
+    float: left; }
+  .the-room .a5-switch-config .wrap-content-switch-config .switch-config-room-name select {
+    float: right;
+    padding: 5px 0;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    width: 82%;
+    margin: 10px 0; }
 
 * {
   background: rgba(0, 0, 0, 0); }

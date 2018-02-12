@@ -47,4 +47,69 @@
   .ul-group-check .div-line {
     margin: 10px 0 20px; }
 
+.h82-new-device-ul-check {
+  position: relative;
+  margin: 0 25px; }
+  .h82-new-device-ul-check .title-group-check {
+    margin-bottom: 5px; }
+    .h82-new-device-ul-check .title-group-check span {
+      font-size: 15px;
+      font-weight: bold; }
+    .h82-new-device-ul-check .title-group-check .lable-check {
+      width: auto; }
+  .h82-new-device-ul-check .div-group-check {
+    width: 24px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    padding: 2px 4px; }
+  .h82-new-device-ul-check .div-circle-check {
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #0097ee;
+    display: none;
+    margin: 5px 0; }
+    .h82-new-device-ul-check .div-circle-check span {
+      display: block;
+      margin: 4px 7px;
+      font-size: 16px; }
+  .h82-new-device-ul-check .div-circle-uncheck {
+    margin: 5px 0;
+    width: 25px;
+    float: right;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #0097ee;
+    display: block; }
+  .h82-new-device-ul-check input[type=checkbox] {
+    display: none; }
+    .h82-new-device-ul-check input[type=checkbox]:checked + label .div-circle-check {
+      display: block; }
+    .h82-new-device-ul-check input[type=checkbox]:checked + label .div-circle-uncheck {
+      display: none; }
+  .h82-new-device-ul-check .li-device-check {
+    display: block;
+    margin: 5px 0; }
+    .h82-new-device-ul-check .li-device-check label {
+      width: 100px !important;
+      height: 40px !important; }
+      .h82-new-device-ul-check .li-device-check label .div-img {
+        width: 40px;
+        float: left;
+        margin-right: 5px; }
+      .h82-new-device-ul-check .li-device-check label .div-text {
+        float: left;
+        margin: 10px;
+        width: 70%; }
+      .h82-new-device-ul-check .li-device-check label i {
+        float: right;
+        width: auto;
+        margin-top: 10px; }
+  .h82-new-device-ul-check .div-line {
+    margin: 10px 0 20px; }
+
 /*# sourceMappingURL=h822-add-devices.css.map */

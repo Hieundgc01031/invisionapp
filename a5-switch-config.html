@@ -5,44 +5,47 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="css/font-awesome.css">
     <script src="js/a8-room-addnew.js"></script>
-    <title>SCENCES EDIT</title>
+    <title>SWICH CONFIG</title>
 </head>
 <body>
 <div class="a8-room-detials the-room">
     <div class="bars-top-bars center-vertical-2">
         <div class="">
-            <a href="Setting">
+            <a href="#">
                 <div class="icon-top-bar-left"><img src="img/Topbar/Close.png" height="24" width="24"/>
                 </div>
             </a>
-            <div class="title">Phòng mới</div>
+            <div class="title">Thiết lập switch</div>
             <a href="#">
                 <div class="icon-top-bar-right"><img src="img/Topbar/Checks.png" height="24" width="24"/>
                 </div>
             </a>
         </div>
     </div>
-
-    <div class="a8-room-addnew a8-room-details the-room-content">
-        <div class="wrap-content wrap-content-add-room">
-            <div class="tittle-room-add">
-                Biểu tượng
-            </div>
-            <div class="div-add-icon">
-                <div class="icon-add">
-                    <img class="change-icon-room" src="img/Rooms/BathRoom.png" height="50" width="50"/>
-                </div>
-                <div class="text-add-icon change-new-icon" >
-                    Thay đổi
-                </div>
-                <div class="clear-both"></div>
-            </div>
+    <div class="a8-room-addnew a8-room-details the-room-content a5-switch-config">
+        <div class="wrap-content wrap-content-add-room  wrap-content-switch-config">
             <div class="tittle-room-add pdt-10">
-                Tên phòng
+                Tên switch
             </div>
             <form>
-                <input type="text" class="input-add-room-name">
+                <input type="text" class="input-add-room-name" value="S-134L">
             </form>
+            
+            <div class="switch-config-room-name">
+                <p>Phòng</p>
+                <div class="div-img-select-room">
+                    <img class="img-select-room" src="img/Rooms/Living.png" height="50" width="50"/>
+
+                </div>
+                <select class="select-room">
+                    <option value="khach">Phòng khách</option>
+                    <option value="ngu">Phòng ngủ</option>
+                    <option value="tam">Phòng tắm</option>
+                    <option value="bep">Phòng bếp</option>
+                </select>
+                <div class="clear-both"></div>
+            </div>
+
 
             <div class="div-line div-line-addnew-room"></div>
 
@@ -51,7 +54,7 @@
                     Hoạt cảnh
                 </div>
                 <div class="div-device click-add-boder">
-                    Thiết bị ngoại vi
+                    Thiết bị
                 </div>
                 <div class="icon-add-pos">
                     <a href="h82-scences-new.html" class="a-plus-scences"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
@@ -73,10 +76,7 @@
                             <div class="div-text">Đèn sảnh</div>
                         </li>
 
-                        <li>
-                            <div class="div-img"><img src="img/Light/DenTha.png" height="40" width="40"/></div>
-                            <div class="div-text">Đèn sảnh</div>
-                        </li>
+
                     </ul>
 
                     <p>Thiết bị làm mát</p>
@@ -86,71 +86,20 @@
                             <div class="div-text">Đèn sảnh</div>
                         </li>
 
-                        <li>
-                            <div class="div-img"><img src="img/Light/DenTha.png" height="40" width="40"/></div>
-                            <div class="div-text">Đèn sảnh</div>
-                        </li>
 
-                        <li>
-                            <div class="div-img"><img src="img/Light/DenTha.png" height="40" width="40"/></div>
-                            <div class="div-text">Đèn sảnh</div>
-                        </li>
                     </ul>
                 </div>
 
                 <div class="div-offlocation">
-                    <ul>
+                    <ul >
                         <li>
-
                             <div class="div-img"><img src="img/Scene/BackHome.png" height="52" width="52"/></div>
                             <div class="div-text">Ở nhà</div>
-                        </li>
-
-                        <li>
-                            <div class="div-img"><img src="img/Scene/BedTime.png" height="52" width="52"/></div>
-                            <div class="div-text">Đi vắng</div>
-                        </li>
-
-                        <li>
-                            <div class="div-img"><img src="img/Scene/ChangeCloth.png" height="52" width="52"/></div>
-                            <div class="div-text">Buổi sáng</div>
-                        </li>
-                        <li>
-
-                            <div class="div-img"><img src="img/Scene/BackHome.png" height="52" width="52"/></div>
-                            <div class="div-text">Ở nhà</div>
-                        </li>
-
-                        <li>
-                            <div class="div-img"><img src="img/Scene/BedTime.png" height="52" width="52"/></div>
-                            <div class="div-text">Đi vắng</div>
-                        </li>
-
-                        <li>
-                            <div class="div-img"><img src="img/Scene/ChangeCloth.png" height="52" width="52"/></div>
-                            <div class="div-text">Buổi sáng</div>
-                        </li>
-                        <li>
-
-                            <div class="div-img"><img src="img/Scene/BackHome.png" height="52" width="52"/></div>
-                            <div class="div-text">Ở nhà</div>
-                        </li>
-
-                        <li>
-                            <div class="div-img"><img src="img/Scene/BedTime.png" height="52" width="52"/></div>
-                            <div class="div-text">Đi vắng</div>
-                        </li>
-
-                        <li>
-                            <div class="div-img"><img src="img/Scene/ChangeCloth.png" height="52" width="52"/></div>
-                            <div class="div-text">Buổi sáng</div>
                         </li>
                     </ul>
 
                 </div>
-                <div class="div-delete-room">
-                    Xóa phòng
-                </div>
+
             </div>
 
         </div>
@@ -196,16 +145,34 @@
         </div>
     </div2>
 </div>
-
-
 </body>
 <script>
-   $(document).ready(function () {
-       $('body').on('click', '.div-icon-room', function () {
-           var src = $(this).find('img').attr('src');
-           console.log(src);
-           $('.change-icon-room').attr('src', src);
-       });
-   });
+    $(document).ready(function () {
+        var str = $('.select-room').val();
+        if(str == "khach"){
+            $('.img-select-room').attr('src','img/Rooms/Living.png');
+        }else if(str == "ngu"){
+            $('.img-select-room').attr('src','img/Rooms/Bedroom.png');
+        }else if(str == "tam"){
+            $('.img-select-room').attr('src','img/Rooms/Bathroom.png');
+        }else if(str == "bep"){
+            $('.img-select-room').attr('src','img/Rooms/Kitchen.png');
+        }
+
+        $('.select-room').change(function () {
+            var str = $('.select-room').val();
+            if(str == "khach"){
+                $('.img-select-room').attr('src','img/Rooms/Living.png');
+            }else if(str == "ngu"){
+                $('.img-select-room').attr('src','img/Rooms/Bedroom.png');
+            }else if(str == "tam"){
+                $('.img-select-room').attr('src','img/Rooms/Bathroom.png');
+            }else if(str == "bep"){
+                $('.img-select-room').attr('src','img/Rooms/Kitchen.png');
+            }
+
+        });
+    });
+
 </script>
 </html>

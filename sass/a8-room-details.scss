@@ -1,7 +1,7 @@
 @import "mixins";
 .a8-room-details{
   .wrap-content{
-    margin-top: 100px;
+    margin-top: 80px;
     padding-bottom: 155px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -34,33 +34,7 @@
       margin-top: 30px;
       width: auto;
       margin-left: 23px;
-      .slick-list{
-        padding-left: 3px;
-      }
-      .the-activity{
-        margin: 3px 13px 10px 3px;
-        float: left;
-        @include boxshad;
-        border-radius: 5px;
-        height: 60px;
-        width: 156px;
-        outline: none;
-        position: relative;
-        .icon-the-activity{
-          width: 20px;
-          @include positonabtl(20px, 20px);
-        }
-        .text-the-activity{
-          width: auto;
-          @include positonabtl(22px, 50px);
-          font-weight: bold;
-          font-size: 15px;
-          color: #b7b7b7;
-          &.active{
-            color: #000;
-          }
-        }
-      }
+
     }
 
     .div-line-activity{

@@ -23,10 +23,9 @@
       color: #c0c0c0;
       margin-left: 2px; }
   .a8-room-grid .wrap-content .div-activity {
-    margin: 25px 20px 0 20px;
+    margin: 25px 25px 0 20px;
     width: auto;
-    overflow: hidden;
-    white-space: nowrap; }
+    overflow: hidden; }
     .a8-room-grid .wrap-content .div-activity .the-activity {
       display: inline-block;
       margin: 5px 15px 3px 3px;
@@ -55,6 +54,25 @@
         padding-right: 5px; }
       .a8-room-grid .wrap-content .div-activity .the-activity.active .text-the-activity {
         color: #000; }
+    .a8-room-grid .wrap-content .div-activity .div-some-scences {
+      width: 75px;
+      height: auto;
+      padding: 0 5px;
+      margin: 0;
+      outline: none;
+      color: #c2c2c2;
+      text-align: center; }
+      .a8-room-grid .wrap-content .div-activity .div-some-scences p {
+        margin-top: 10px;
+        width: auto;
+        height: 32px;
+        overflow: hidden;
+        white-space: initial; }
+      .a8-room-grid .wrap-content .div-activity .div-some-scences img {
+        width: 50px; }
+      .a8-room-grid .wrap-content .div-activity .div-some-scences.active {
+        color: #000;
+        font-weight: bold; }
   .a8-room-grid .wrap-content .div-line-activity {
     margin-left: 25px;
     margin-right: 25px;
@@ -70,10 +88,10 @@
     width: auto;
     margin-left: 23px;
     overflow: hidden;
-    white-space: nowrap;
     padding-right: 1px; }
+    .a8-room-grid .wrap-content .div-lamp .slick-list {
+      padding-left: 2px; }
     .a8-room-grid .wrap-content .div-lamp .the-lamp {
-      display: inline-block;
       background: #fff;
       width: 102px;
       margin: 3px 13px 3px 1px;
@@ -90,6 +108,10 @@
         .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img {
           width: 40px;
           height: 40px; }
+        .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img.on {
+          display: none; }
+        .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img.off {
+          display: block; }
       .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp p {
         margin: 5px 10px;
         font-weight: bold;
@@ -97,13 +119,25 @@
       .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span {
         margin: 5px 10px 10px 10px;
         color: #c2c2c2; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span.off {
+        display: block; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span.on {
+        display: none; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .text-the-lamp span.off {
+        display: none; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .text-the-lamp span.on {
+        display: block; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .icon-the-lamp img.on {
+        display: block; }
+      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .icon-the-lamp img.off {
+        display: none; }
 
 .div-bgc-25 {
   overflow: hidden;
   margin: 10px 25px 15px;
   height: auto;
   background-color: rgba(250, 250, 250, 0.8);
-  padding: 10px 0 10px 10px;
+  padding: 10px 5px 10px 10px;
   border-radius: 8px; }
   .div-bgc-25 .div-lamp {
     margin-left: 0 !important;
