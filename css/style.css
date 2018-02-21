@@ -2063,6 +2063,17 @@ a {
     width: 82%;
     margin: 10px 0; }
 
+.h81-list-group .wrap-content .ul-list-group {
+  margin: 0 25px; }
+  .h81-list-group .wrap-content .ul-list-group li {
+    padding: 7px 0; }
+    .h81-list-group .wrap-content .ul-list-group li p {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333; }
+    .h81-list-group .wrap-content .ul-list-group li .div-line {
+      margin-top: 7px; }
+
 * {
   background: rgba(0, 0, 0, 0); }
 
