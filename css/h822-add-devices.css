@@ -38,7 +38,7 @@
         margin-right: 5px; }
       .ul-group-check .li-device-check label .div-text {
         float: left;
-        width: auto;
+        width: 70%;
         margin: 10px; }
       .ul-group-check .li-device-check label i {
         float: right;
@@ -76,6 +76,8 @@
       display: block;
       margin: 4px 7px;
       font-size: 16px; }
+      .h82-new-device-ul-check .div-circle-check span.span-icon {
+        margin: 5px; }
   .h82-new-device-ul-check .div-circle-uncheck {
     margin: 5px 0;
     width: 25px;
@@ -107,8 +109,7 @@
         width: 70%; }
       .h82-new-device-ul-check .li-device-check label i {
         float: right;
-        width: auto;
-        margin-top: 10px; }
+        width: auto; }
   .h82-new-device-ul-check .div-line {
     margin: 10px 0 20px; }
 

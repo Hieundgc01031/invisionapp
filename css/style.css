@@ -799,58 +799,108 @@ a {
     background-color: #e4e4e4;
     margin-top: 20px;
     margin-bottom: 20px; }
-  .a8-room-grid .wrap-content .tittle-lamp {
-    margin-left: 25px;
-    font-size: 15px;
-    font-weight: bold; }
-  .a8-room-grid .wrap-content .div-lamp {
-    margin-top: 10px;
-    width: auto;
+  .a8-room-grid .wrap-content .div-camera-user > p {
+    max-width: 325px;
+    margin: 20px 25px 5px;
+    font-weight: bold;
+    font-size: 16px; }
+  .a8-room-grid .wrap-content .div-camera-user .slide-camera {
+    margin-right: 20px;
     margin-left: 23px;
     overflow: hidden;
-    padding-right: 1px; }
-    .a8-room-grid .wrap-content .div-lamp .slick-list {
-      padding-left: 2px; }
-    .a8-room-grid .wrap-content .div-lamp .the-lamp {
-      background: #fff;
-      width: 102px;
-      margin: 3px 13px 3px 1px;
-      box-shadow: 0px 2px 10px 2px rgba(224, 224, 224, 0.4);
-      border-radius: 5px;
-      height: 100px;
-      outline: none;
-      position: relative; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp {
-        height: 40px;
-        width: 40px;
-        margin-left: 10px;
-        margin-top: 10px; }
-        .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img {
-          width: 40px;
-          height: 40px; }
-        .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img.on {
-          display: none; }
-        .a8-room-grid .wrap-content .div-lamp .the-lamp .icon-the-lamp img.off {
-          display: block; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp p {
-        margin: 5px 10px;
+    width: auto; }
+    .a8-room-grid .wrap-content .div-camera-user .slide-camera .the-camera {
+      margin: 1px 10px 1px 1px;
+      width: 165px;
+      height: auto; }
+      .a8-room-grid .wrap-content .div-camera-user .slide-camera .the-camera .camera-screen {
+        height: 95px;
+        position: relative;
+        border-radius: 5px;
+        width: 100%; }
+        .a8-room-grid .wrap-content .div-camera-user .slide-camera .the-camera .camera-screen a img {
+          max-width: 165px;
+          border-radius: 5px; }
+        .a8-room-grid .wrap-content .div-camera-user .slide-camera .the-camera .camera-screen .div-activiti-posititon {
+          position: absolute;
+          width: auto;
+          height: auto;
+          display: inline-block;
+          bottom: 10px;
+          left: 10px;
+          background-color: #aaaaaa;
+          border-radius: 3px;
+          padding: 0 3px 1px 1px; }
+          .a8-room-grid .wrap-content .div-camera-user .slide-camera .the-camera .camera-screen .div-activiti-posititon i {
+            width: auto;
+            color: red;
+            font-size: 12px; }
+          .a8-room-grid .wrap-content .div-camera-user .slide-camera .the-camera .camera-screen .div-activiti-posititon span {
+            width: auto;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 11px; }
+      .a8-room-grid .wrap-content .div-camera-user .slide-camera .the-camera p {
         font-weight: bold;
-        overflow: hidden; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span {
-        margin: 5px 10px 10px 10px;
-        color: #c2c2c2; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span.off {
-        display: block; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp .text-the-lamp span.on {
-        display: none; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .text-the-lamp span.off {
-        display: none; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .text-the-lamp span.on {
-        display: block; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .icon-the-lamp img.on {
-        display: block; }
-      .a8-room-grid .wrap-content .div-lamp .the-lamp.active .icon-the-lamp img.off {
-        display: none; }
+        font-size: 16px;
+        margin: 7px 0 5px; }
+      .a8-room-grid .wrap-content .div-camera-user .slide-camera .the-camera span {
+        color: #bbbbbb; }
+  .a8-room-grid .wrap-content .tittle-device {
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold; }
+  .a8-room-grid .wrap-content .div-device-gird {
+    height: 110px;
+    margin-top: 10px; }
+    .a8-room-grid .wrap-content .div-device-gird .div-device {
+      width: auto;
+      margin-left: 23px;
+      overflow: hidden;
+      padding-right: 1px;
+      outline: none; }
+      .a8-room-grid .wrap-content .div-device-gird .div-device .slick-list {
+        padding-left: 2px; }
+      .a8-room-grid .wrap-content .div-device-gird .div-device .the-device {
+        background: #fff;
+        width: 102px;
+        margin: 3px 13px 3px 1px;
+        box-shadow: 0px 2px 10px 2px rgba(224, 224, 224, 0.4);
+        border-radius: 5px;
+        height: 100px;
+        outline: none;
+        position: relative;
+        padding-top: 7px; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device .icon-the-device {
+          height: 40px;
+          width: 40px;
+          margin-left: 10px; }
+          .a8-room-grid .wrap-content .div-device-gird .div-device .the-device .icon-the-device img {
+            width: 40px;
+            height: 40px; }
+          .a8-room-grid .wrap-content .div-device-gird .div-device .the-device .icon-the-device img.on {
+            display: none; }
+          .a8-room-grid .wrap-content .div-device-gird .div-device .the-device .icon-the-device img.off {
+            display: block; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device .text-the-device p {
+          margin: 5px 10px;
+          font-weight: bold;
+          overflow: hidden; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device .text-the-device span {
+          margin: 5px 10px 10px 10px;
+          color: #c2c2c2; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device .text-the-device span.off {
+          display: block; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device .text-the-device span.on {
+          display: none; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device.active .text-the-device span.off {
+          display: none; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device.active .text-the-device span.on {
+          display: block; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device.active .icon-the-device img.on {
+          display: block; }
+        .a8-room-grid .wrap-content .div-device-gird .div-device .the-device.active .icon-the-device img.off {
+          display: none; }
 
 .div-bgc-25 {
   overflow: hidden;
@@ -859,11 +909,9 @@ a {
   background-color: rgba(250, 250, 250, 0.8);
   padding: 10px 5px 10px 10px;
   border-radius: 8px; }
-  .div-bgc-25 .div-lamp {
+  .div-bgc-25 .div-device {
     margin-left: 0 !important;
     margin-top: 0 !important; }
-    .div-bgc-25 .div-lamp .the-lamp:last-child {
-      margin-right: 10px !important; }
   .div-bgc-25 .tittle-lamp {
     margin-left: 4px !important;
     margin-bottom: 10px; }
@@ -1266,7 +1314,7 @@ a {
         margin-right: 5px; }
       .ul-group-check .li-device-check label .div-text {
         float: left;
-        width: auto;
+        width: 70%;
         margin: 10px; }
       .ul-group-check .li-device-check label i {
         float: right;
@@ -1304,6 +1352,8 @@ a {
       display: block;
       margin: 4px 7px;
       font-size: 16px; }
+      .h82-new-device-ul-check .div-circle-check span.span-icon {
+        margin: 5px; }
   .h82-new-device-ul-check .div-circle-uncheck {
     margin: 5px 0;
     width: 25px;
@@ -1335,8 +1385,7 @@ a {
         width: 70%; }
       .h82-new-device-ul-check .li-device-check label i {
         float: right;
-        width: auto;
-        margin-top: 10px; }
+        width: auto; }
   .h82-new-device-ul-check .div-line {
     margin: 10px 0 20px; }
 
@@ -1835,7 +1884,7 @@ a {
       height: 500px;
       background-color: #fff;
       position: absolute;
-      top: 0;
+      top: -2px !important;
       left: -100%; }
       .div-setting-device .main-setting-device .div-control-tivi2 .div-content-control-2 {
         margin: 0 auto;

@@ -98,78 +98,145 @@
       margin-bottom: 20px;
     }
 
-    .tittle-lamp{
-      margin-left: 25px;
+    .div-camera-user{
+      //padding-bottom: 60px;
+      &>p{
+        max-width: 325px;
+        margin: 20px 25px 5px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .slide-camera{
+        margin-right: 20px;
+        margin-left: 23px;
+        overflow: hidden;
+        width: auto;
+        .the-camera{
+          margin: 1px 10px 1px 1px;
+          width: 165px;
+          height: auto;
+          .camera-screen{
+            height: 95px;
+            position: relative;
+            border-radius: 5px;
+            width: 100%;
+            a{
+              img{
+                max-width: 165px;
+                border-radius: 5px;
+              }
+            }
+            .div-activiti-posititon{
+              position: absolute;
+              width: auto;
+              height: auto;
+              display: inline-block;
+              bottom: 10px;
+              left: 10px;
+              background-color: #aaaaaa;
+              border-radius: 3px;
+              padding: 0 3px 1px 1px;
+              i{
+                width: auto;
+                color: red;
+                font-size: 12px;
+              }
+              span{
+                width: auto;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 11px;
+              }
+            }
+          }
+          p{
+            font-weight: bold;
+            font-size: 16px;
+            margin: 7px 0 5px;
+          }
+          span{
+            color: #bbbbbb;
+          }
+        }
+      }
+    }
+
+    .tittle-device{
+      margin-left: 5px;
       font-size: 15px;
       font-weight: bold;
     }
-    .div-lamp{
+    .div-device-gird{
+      height: 110px;
       margin-top: 10px;
-      width: auto;
-      margin-left: 23px;
-      overflow: hidden;
-      padding-right: 1px;
-      .slick-list{
-        padding-left: 2px;
-      }
-      .the-lamp{
-        background: #fff;
-        width: 102px;
-        margin: 3px 13px 3px 1px;
-        @include boxshad;
-        border-radius: 5px;
-        height: 100px;
+      .div-device{
+        width: auto;
+        margin-left: 23px;
+        overflow: hidden;
+        padding-right: 1px;
         outline: none;
-        position: relative;
-        .icon-the-lamp{
-          height: 40px;
-          width: 40px;
-          margin-left: 10px;
-          margin-top: 10px;
-          img{
-            width: 40px;
+        .slick-list{
+          padding-left: 2px;
+        }
+        .the-device{
+          background: #fff;
+          width: 102px;
+          margin: 3px 13px 3px 1px;
+          @include boxshad;
+          border-radius: 5px;
+          height: 100px;
+          outline: none;
+          position: relative;
+          padding-top: 7px;
+          .icon-the-device{
             height: 40px;
-          }
-          img.on{
-            display: none;
-          }
-          img.off{
-            display: block;
-          }
-        }
-        .text-the-lamp{
-          p{
-            margin: 5px 10px;
-            font-weight: bold;
-            overflow: hidden;
-          }
-          span{
-            margin: 5px 10px 10px 10px;
-            color: #c2c2c2;
-          }
-          span.off{
-            display: block;
-          }
-          span.on{
-            display: none;
-          }
-        }
-
-        &.active{
-          .text-the-lamp{
-            span.off{
-              display: none;
+            width: 40px;
+            margin-left: 10px;
+            img{
+              width: 40px;
+              height: 40px;
             }
-            span.on{
-              display: block;
-            }
-          }
-          .icon-the-lamp{
             img.on{
-              display: block;
+              display: none;
             }
             img.off{
+              display: block;
+            }
+          }
+          .text-the-device{
+            p{
+              margin: 5px 10px;
+              font-weight: bold;
+              overflow: hidden;
+            }
+            span{
+              margin: 5px 10px 10px 10px;
+              color: #c2c2c2;
+            }
+            span.off{
+              display: block;
+            }
+            span.on{
               display: none;
+            }
+          }
+
+          &.active{
+            .text-the-device{
+              span.off{
+                display: none;
+              }
+              span.on{
+                display: block;
+              }
+            }
+            .icon-the-device{
+              img.on{
+                display: block;
+              }
+              img.off{
+                display: none;
+              }
             }
           }
         }
@@ -187,11 +254,11 @@
   padding: 10px 5px 10px 10px;
   border-radius: 8px;
 
-  .div-lamp{
+  .div-device{
     margin-left: 0 !important;
     margin-top: 0 !important  ;
-    .the-lamp:last-child{
-        margin-right: 10px !important;
+    .the-device:last-child{
+        //margin-right: 10px !important;
     }
   }
   .tittle-lamp{
